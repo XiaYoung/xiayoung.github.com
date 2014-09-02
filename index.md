@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 风鳞.
+title: 風鱗.
 tagline: Barking dog seldom bits.
 ---
 {% include JB/setup %}
