@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 tagline: "Supporting tagline"
-tags : [syntax, beginner, Markdown, tutorial]
+tags : [syntax, Markdown, tutorial]
 ---
 ## Phrase Emphasis ##
 
