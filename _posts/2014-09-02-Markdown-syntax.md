@@ -1,6 +1,6 @@
 ---
 layout: post
-category : lessons
+category : reference
 tagline: "Supporting tagline"
 tags : [syntax, Markdown, tutorial]
 ---
