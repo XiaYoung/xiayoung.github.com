@@ -1,13 +1,11 @@
 ---
 layout: page
-title: XiaYoung's blog.
-tagline: Supporting tagline
+title: 风鳞.
+tagline: Barking dog seldom bits.
 ---
 {% include JB/setup %}
 
-## Sample Posts
-
-Here's a sample "posts list".
+## All Posts
 
 <ul class="posts">
   {% for post in site.posts %}
