@@ -3,15 +3,15 @@ layout: post
 category : notes
 tags : [business model]
 ---
-##Canvas
+## 1 Canvas
 
-### Definition of a Business Model  
+###  Definition of a Business Model  
 
 A business model describes the rationale of how an organization creates, delivers, and captures value  
 
 ### The 9 Building Blocks
 
-####4 main areas of a business:  
+#### 4 main areas of a business:  
 
 1.  customers  
 2. offer  
@@ -147,7 +147,7 @@ the cash a company generates from each Customer Segment( costs must be subtracte
 
 ---
 
-##Patterns
+## 2 Patterns
 
 ### Unbundling business models
 
@@ -161,7 +161,7 @@ the cash a company generates from each Customer Segment( costs must be subtracte
 
 ---
 
-##Design
+## 3 Design
 
 ### Customer insights  
 
@@ -177,7 +177,7 @@ the cash a company generates from each Customer Segment( costs must be subtracte
 
 ---
 
-##Strategy
+## 4 Strategy
 
 ### Business model environment
 
@@ -189,7 +189,7 @@ the cash a company generates from each Customer Segment( costs must be subtracte
 
 ---
 
-##Process
+## 5 Process
 
 ---
 
