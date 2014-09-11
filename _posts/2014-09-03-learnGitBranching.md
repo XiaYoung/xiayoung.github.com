@@ -1,6 +1,6 @@
 ---
 layout : post
-category : note
+category : reading note
 tags : [Git]
 ---
 
