@@ -3,15 +3,15 @@ layout: post
 category : notes
 tags : [business model]
 ---
-## 1 Canvas
+##Canvas
 
-###  Definition of a Business Model  
+### Definition of a Business Model  
 
 A business model describes the rationale of how an organization creates, delivers, and captures value  
 
 ### The 9 Building Blocks
 
-#### 4 main areas of a business:  
+####4 main areas of a business:  
 
 1.  customers  
 2. offer  
@@ -139,29 +139,97 @@ the cash a company generates from each Customer Segment( costs must be subtracte
 			* Real-time-market
 			* Auctions
 6.  Key Resources  
+*  Describe:
+the most important assets required to make a business model work   
+**What Key Resources do our Value Propositions require?**  
+**Our Distribution Channels?**   
+**Customer Relationships?**  
+**Revenue Streams?**  
+*  Categorized as follows:
+		* Physical
+		* Intellectual 
+		* human
+		* Finacial
 7.  Key Activities  
+*  Describes:
+the most important things a company must do to make its business model work  
+**What Key Activities do our Value Propositions require?**
+**Our Distribution Channels?**  
+**Customer Relationships?**  
+**Revenue streams?**  
+*  Categorized as follows:
+		* Production
+		* Problem solving
+		* Platform/network 
 8.  Key Partnerships  
-9.  Cost structure  
+*  Describes:
+the network of suppliers and partners that make the business model work
+**Who are our Key Partners?**  
+**Who are our key suppliers?**  
+**Which Key Resources are we acquiring from partners?**  
+**Which Key Activities do partners perform?**
+*  four different types of partnerships:
+		1. Strategic alliances between non-competitors  
+		2. Coopetition: strategic partnerships between competitors  
+		3. Joint ventures to develop new businesses   
+		4. Buyer-supplier relationships to assure reliable supplies
+*  three motivations:
+		* Optimization and economy of scale  
+		* Reduction of risk and uncertainty   
+		* Acquisition of particular resources and activities   
+9.  Cost structure   
+*  Describes:
+all costs incurred to operate a business model  
+**What are the most important costs inherent in our business model?**    
+**Which Key Resources are most expensive?**   
+**Which Key Activities are most expensive?**  
+* two broad classes of business model Cost Structures:  
+		* Cost-driven  
+		* Value-driven  
+* Cost Structures can have the following characteristics:     
+		* Fixed costs
+		* Variable costs
+		* Economies of scale
+		* Economies of scope
+
+
 
 ### The business model canvas template
 
 ---
 
-## 2 Patterns
+##Patterns
 
-### Unbundling business models
+### Unbundling business models  
+
+*  Three core business types
+		*  Product Innovation
+		*  Customer Relationship Management
+		*  Infrastructure Management 
 
 ### The long tail  
+
+*  three economic triggers:
+		* Democratization of tools of production
+		* Democratization of distribution
+		* Falling search costs to connect supply with demand 
 
 ### Multi-Sided Platforms  
 
 ### FREE as a business model  
 
+*  three different patterns:
+		* free offer based on multi-sided platforms(advertising-based)
+		* free basic services with optional premium services(the so-called "freemium" model)
+		* and the "bait & hook" model whereby a free or inexpensive initial offer lures customers into repeat purchases
+
+ 
+
 ### Open Business models  
 
 ---
 
-## 3 Design
+##Design
 
 ### Customer insights  
 
@@ -177,7 +245,7 @@ the cash a company generates from each Customer Segment( costs must be subtracte
 
 ---
 
-## 4 Strategy
+##Strategy
 
 ### Business model environment
 
@@ -189,7 +257,7 @@ the cash a company generates from each Customer Segment( costs must be subtracte
 
 ---
 
-## 5 Process
+##Process
 
 ---
 
@@ -214,4 +282,25 @@ the cash a company generates from each Customer Segment( costs must be subtracte
 16. Increasingly, companies are **utilizing** user communities to become more involved with customer/**prospects** and to **facilitate** connections between community members.  
 17.  If customers comprise the heart of a business model, Revenue Streams are its **arteries**.  
 18.  Each Revenue Stream may have different pricing **mechanisms**, such as fixed list prices, bargaining, **auctioning**, market dependent, volume dependent, or yield management.  
+19.  A **microchip manufacturer** requires **capital-intensive** production **facilities**, whereas a microchip designer focuses more on human resources.
+20.  Key resources can be owned or **leased ** by the company or **acquired** from key partners.  
+21.  The former has an enormous global network o stores and related logistics **infrastructure**.   
+22.  Every enterprise requires human resources, but people are particularly **prominent** in certain business models.  
+23.  Some business models call for financial resources and/or financial **guarantees**, such as cash, lines of credit, or a stock option pool for hiring key employees.
+24.  Ericsson may **opt** to borrow funds from banks and capital markets, then use a **portion** of the **proceeds** to provide **vendor** financing to equipment customers, thus ensuring that orders are placed with Ericsson rather than competitors.   
+25.  Companies **forge** partnerships for many reasons, and partnerships are becoming a cornerstone of many business models.   
+26.  Companies create **alliances** to optimize their business models, reduce risk, or **acquire** resources.  
+27.  Some businesses, such as music festivals, are characterized by a high **proportion** of variable costs.    
+28.  **Aggregate** sales of **niche** items can be as **lucrative** as the traditional model whereby a small number of bestsellers account for most revenues.  
+29.  The internet has made digital content distribution a **commodity**, and **dramatically** lowered **inventory**, **communications**, and **transaction** costs opening up new markets for niche products.  
+30.  In the game industry, this has **led** to a **fierce** battle between three main competitors and their respective devices: the Sony Playstation series, the Microsoft Xbox series, and the Nintendo Wii.  
+31.  Sony and Microsoft dominated the game console market until Nintendo's Wii **swept** the sector with a fresh approach to technology and an **astonishingly** different business model.   
+32.  Before launching the Wii, Nintendo was **spiraling** downward, rapidly losing market share, and **teetering** on the edge of **bankruptcy**.    
+33.  Thus, the Nintedo Wii was less costly to produce, allowing the company to **forego commercialization subsidies**.    
+34.  Others, such as the so-called freemium model, which provides basic services free of charge and premium services for a fee, have become popular in step with the increasing digitization of goods and services offered via the web.   
+35.  Bands and artists who have **experimented** successfully with free music include Radiohead and Trent Reznor of Nine Inch Nails.  
+36.  Meanwhile, the high fixed costs that **guarantee** good **journalism**-news gathering and editorial teams-remained unchanged.   
+37.  Though *Metro* offers a completely different format and journalistic quality and focuses primarily on young readers who previously ignored newspapers, it is **ratcheting** up the pressure on fee-for-service news providers.  
+38.  Red Hat understood that companies were interested in robust, licensing fee-free open source software, but were **reluctant** to **adopt** it due to concerns that no single entity was legally responsible for providing and maintaining it.  
+39.  In fact, users are charged only slightly more than the termination costs that skype itself incurs for calls routed through wholesale carriers such as iBasis and Level 3, which handle the company's network traffic.  
 
