@@ -1,6 +1,6 @@
 ---
 layout: post
-category : notes
+category : reading note
 tags : [business model]
 ---
 ##Canvas
