@@ -1,8 +1,7 @@
 ---
 layout: post
 category : reference
-tagline: "Supporting tagline"
-tags : [syntax, Markdown, tutorial]
+tags : [syntax, Markdown]
 ---
 ## Phrase Emphasis ##
 
