@@ -283,7 +283,7 @@ all costs incurred to operate a business model
 17.  If customers comprise the heart of a business model, Revenue Streams are its **arteries**.  
 18.  Each Revenue Stream may have different pricing **mechanisms**, such as fixed list prices, bargaining, **auctioning**, market dependent, volume dependent, or yield management.  
 19.  A **microchip manufacturer** requires **capital-intensive** production **facilities**, whereas a microchip designer focuses more on human resources.
-20.  Key resources can be owned or **leased ** by the company or **acquired** from key partners.  
+20.  Key resources can be owned or **leased** by the company or **acquired** from key partners.  
 21.  The former has an enormous global network o stores and related logistics **infrastructure**.   
 22.  Every enterprise requires human resources, but people are particularly **prominent** in certain business models.  
 23.  Some business models call for financial resources and/or financial **guarantees**, such as cash, lines of credit, or a stock option pool for hiring key employees.
