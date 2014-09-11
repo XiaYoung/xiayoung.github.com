@@ -1,7 +1,7 @@
 ---
 layout: post
 category : reference
-tags : [program language, syntax, Markdown]
+tags : [language, syntax, Markdown]
 ---
 ## Phrase Emphasis ##
 
