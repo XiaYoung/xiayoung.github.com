@@ -1,7 +1,7 @@
 ---
 layout : post
-categories : learning note
-tags : Unity, Maya, Rigging, Animation
+category : learning note
+tags : [Unity, Maya, Rigging, Animation]
 ---
 ### Rigging Notes 
 
