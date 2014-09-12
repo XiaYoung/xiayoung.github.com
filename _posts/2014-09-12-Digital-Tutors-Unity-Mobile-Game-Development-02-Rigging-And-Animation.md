@@ -1,6 +1,6 @@
 ---
 layout : post
-categories : studing notes
+categories : learning note
 tags : Unity, Maya, Rigging, Animation
 ---
 ### Rigging Notes 
