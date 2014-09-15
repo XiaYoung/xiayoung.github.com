@@ -171,7 +171,6 @@ tags : [数据结构, progaming basic]
 			e. for(i=n; i>0; i/=2)
 				{y=*x;}
 			
-		d,e算法中，`y*=x;` 程序段的时间复杂度都是O($$log({2}{n})$$)，成为对数阶		
+		d,e算法中，`y*=x;` 程序段的时间复杂度都是$$O\left( \log _{ 2 }{ n }  \right)$$ ，成为对数阶		
 
-$$\sum_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6}$$
 			
