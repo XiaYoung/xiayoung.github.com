@@ -9,17 +9,11 @@ tags : [cloud computing, progaming basic]
 
 #### **1.1 云计算的发展历程**    
 
-|---
-| Default aligned | Left aligned | Center aligned | Right aligned
-|-|:-|:-:|-:
-| First body part | Second cell | Third cell | fourth cell
-| Second line |foo | **strong** | baz
-| Third line |quux | baz | bar
-|---
-| Second body
-| 2 line
-|===
-| Footer row
+|时间|划分|主要技术|时代|
+|------|--------|-----------------|----------|
+| 18世纪<br>中叶   | 第一次<br> 技术革命 | 蒸汽机发明和应用， <br>实现机械化和大生产 | 工业时代 |
+| 19世纪<br>30年代 | 第二次<br> 技术革命 | 电力技术                              | 电气时代 |
+| 20世纪<br>40年代 | 第三次<br> 技术革命 | 电子、通信 <br>计算机、网络               | 信息时代 |
 
 
 #### **1.2 云计算的基本概念**  
