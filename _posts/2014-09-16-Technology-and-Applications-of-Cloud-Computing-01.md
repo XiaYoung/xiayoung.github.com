@@ -111,15 +111,15 @@ tags : [cloud computing, progaming basic]
 		* 应用层。  
 *  二、云计算标准化组织  
 
-|研究关注对象|国际标准组织或协会|
-|---|---|
-|虚拟资源管理|DMTF OGF ETSI|  
-|数据存储与管理|SNIA DMTF|  
-|应用移植与部署|DMTF Use Case Group OCM|  
-|安全|CSA DMTF NIST OCM|  
-|运营管理|UCG OCM|  
-|概念与架构|NIST UCG OCM|  
-|测试|OCC|
+	|研究关注对象|国际标准组织或协会|
+	|---|---|
+	|虚拟资源管理|DMTF OGF ETSI|  
+	|数据存储与管理|SNIA DMTF|  
+	|应用移植与部署|DMTF Use Case Group OCM|  
+	|安全|CSA DMTF NIST OCM|  
+	|运营管理|UCG OCM|  
+	|概念与架构|NIST UCG OCM|  
+	|测试|OCC|  
   
 	1. 开放云计算联盟（Open Cloud Consortium, OCC）  
 	2.  <<云开放宣言>>（Open Cloud Mainfesto）  
