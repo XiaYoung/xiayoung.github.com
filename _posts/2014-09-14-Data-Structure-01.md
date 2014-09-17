@@ -3,6 +3,10 @@ layout : post
 category : MSE
 tags : [Data structure, progaming basic] 
 ---
+
+* This line is a placeholder to generate the table of contents
+{:toc}
+
 ##第一章 数据结构绪论 
 
 ### **第一节 数据结构**  
