@@ -47,7 +47,7 @@
     {% include JB/comments %}
   </div>
   <div style = "width:30%;float:left;">
-    <ul style = "position:fixed;">
+    <ul id="tree" class="ztree" style="width: 260px; overflow: auto; position: fixed; z-index: 2147483647; border: 0px none; left: 0px; top: 0px;">
       准备放目录
     </ul>
   </div>
@@ -56,7 +56,11 @@
 <script type="text/javascript" src="{{BASE_PATH}}/js/jquery-1.4.4.min.js"></script>
 <script type="text/javascript" src="{{BASE_PATH}}/js/toc.js"></script>
 <script type="text/javascript">
-$(document).ready(function() {
-    $('element selector').toc();
-});
-</script>
+	<!--
+	$(document).ready(function(){
+		$('#tree').ztree_toc({
+
+		});
+	});
+	//-->
+	</script>
