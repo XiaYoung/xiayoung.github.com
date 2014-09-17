@@ -275,13 +275,13 @@ function factor(opts ,count,current) {
 		is_highlight_selected_line: true,
 		step: 100,
 		ztreeStyle: {
-			width:'260px',
+			//width:'260px',
 			overflow: 'auto',
 			position: 'fixed',
 			'z-index': 2147483647,
 			border: '0px none',
-			left: '0px',
-			bottom: '0px',
+			//left: '0px',
+			//bottom: '0px',
 			// height:'100px'
 		},
 		ztreeSetting: {
