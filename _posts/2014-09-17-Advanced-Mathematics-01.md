@@ -1,6 +1,6 @@
 ---
 layout : post
-category : MSE
+category : MOOC
 tags: [ Advanced Mathematics]
 ---
 
