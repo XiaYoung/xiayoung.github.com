@@ -1,10 +1,9 @@
-
-
 ---
 layout : post
-category : mse
+category : MSE
 tags: [ Advanced Mathematics]
 ---
+
 ### 第三讲 集合与映射  
 
 #### 2 集合的概念与运算  
