@@ -281,8 +281,8 @@ function factor(opts ,count,current) {
 			'z-index': 2147483647,
 			border: '0px none',
 			'box-shadow': '0 1px 2px rgba(0, 0, 0, 0.05)',
-			'margin-left': '-10px';
-			'background-color': 'white';
+			'margin-left': '-10px',
+			'background-color': 'white'
 			//left: '0px',
 			//bottom: '0px',
 			// height:'100px'
