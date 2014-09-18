@@ -157,6 +157,7 @@ function factor(opts ,count,current) {
 			name:$(header_obj).text()||'null',
 			open:true,
 			url:'#'+ anchor,
+			onclick:'javascript:window.scroll(0,100)',
 			target:'_self'
 		});
 	}
