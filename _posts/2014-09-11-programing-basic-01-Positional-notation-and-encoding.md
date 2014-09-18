@@ -3,6 +3,9 @@ layout: post
 category : learning note
 tags : [programing basic]
 ---
+
+## Positional Notation And Encoding
+
 1. 内存 = 一堆“开关”。状态：0关，1开（或0开，1关）。  
 2. 二进制是8421码。
 3. 一个普通整数是32位（在64位系统下）。
