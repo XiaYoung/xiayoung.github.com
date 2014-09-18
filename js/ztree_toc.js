@@ -315,11 +315,10 @@ function factor(opts ,count,current) {
 				},
 				onClick: function(event, treeId, treeNode) {
 				//	window.scrollBy(0,10);
-					console.log('onclick!!!!');
-				},
-				afterClick: function(event, treeId, treeNode) {
-					window.scrollBy(0,10);
-					console.log('afterclick!!!!');
+					
+					var _targetTop = $('#'+treeNode.id).offset().top;//获取位置
+					console.log(var _targetTop);
+					//jQuery("html,body").animate({scrollTop:_targetTop},300);//跳转
 				},
 				onRightClick: function(event, treeId, treeNode) {
 					if(treeNode.id == 1){
