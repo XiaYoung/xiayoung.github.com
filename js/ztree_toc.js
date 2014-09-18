@@ -310,7 +310,7 @@ function factor(opts ,count,current) {
 						
 						$('#' + treeNode.id).css('color' ,'red').fadeOut("slow" ,function() {
 						    // Animation complete.
-						    	window.scrollBy(0,-200);
+						    	window.scrollBy(0,200px);
 							$(this).show().css('color','black');
 						});
 					}
