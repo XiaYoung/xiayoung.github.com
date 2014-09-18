@@ -156,8 +156,8 @@ function factor(opts ,count,current) {
 			pId:pid ,
 			name:$(header_obj).text()||'null',
 			open:true,
-			url:'#'+ anchor,
-			target:'_self'
+			//url:'#'+ anchor,
+			//target:'_self'
 		});
 	}
 
@@ -314,10 +314,9 @@ function factor(opts ,count,current) {
 					}
 				},
 				onClick: function(event, treeId, treeNode) {
-				//	window.scrollBy(0,10);
-					
 					var _targetTop = $('#'+treeNode.id).offset().top;//获取位置
 					console.log(_targetTop);
+					window.scrollTo(0,_targetTop-120);
 					//jQuery("html,body").animate({scrollTop:_targetTop},300);//跳转
 				},
 				onRightClick: function(event, treeId, treeNode) {
