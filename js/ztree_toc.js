@@ -301,7 +301,7 @@ function factor(opts ,count,current) {
 			},
 			callback: {
 				beforeClick: function(treeId, treeNode) {
-					window.scrollBy(0,400);
+					window.scrollBy(0,-400);
 					$('a').removeClass('curSelectedNode');
 					if(treeNode.id == 1){
 						// TODO: when click root node
