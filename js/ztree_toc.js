@@ -307,10 +307,10 @@ function factor(opts ,count,current) {
 						console.log('click root table of content');
 					}
 					if($.fn.ztree_toc.defaults.is_highlight_selected_line == true) {
+						window.scrollBy(0,100);
 						$('#' + treeNode.id).css('color' ,'green').fadeOut("slow" ,function() {
 						    // Animation complete.
 							$(this).show().css('color','black');
-							window.scroll(0,100);
 						});
 					}
 				},
