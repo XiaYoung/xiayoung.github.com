@@ -301,15 +301,13 @@ function factor(opts ,count,current) {
 			},
 			callback: {
 				beforeClick: function(treeId, treeNode) {
-
 					$('a').removeClass('curSelectedNode');
-					window.scrollBy(0,200px);
 					if(treeNode.id == 1){
 						// TODO: when click root node
 						console.log('click root table of content');
 					}
 					if($.fn.ztree_toc.defaults.is_highlight_selected_line == true) {
-						
+						window.scrollBy(0,200px);
 						$('#' + treeNode.id).css('color' ,'red').fadeOut("slow" ,function() {
 						    // Animation complete.
 							$(this).show().css('color','black');
