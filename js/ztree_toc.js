@@ -275,14 +275,15 @@ function factor(opts ,count,current) {
 		is_highlight_selected_line: true,
 		step: 100,
 		ztreeStyle: {
-			width:'200px',
+			//width:'200px',
 			overflow: 'auto',
 			position: 'fixed',
 			'z-index': 2147483647,
 			border: '0px none',
-			'box-shadow': '0 1px 2px rgba(0, 0, 0, 0.05)',
-			'margin-left': '-10px',
-			'background-color': 'white'
+			'box-shadow': '2px 2px 10px rgba(0, 0, 0, 0.5)',
+			'margin-left': '25px',
+			'background-color': 'white',
+			top:'45px'
 			//left: '0px',
 			//bottom: '0px',
 			// height:'100px'
