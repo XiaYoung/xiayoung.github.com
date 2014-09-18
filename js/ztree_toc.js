@@ -314,7 +314,7 @@ function factor(opts ,count,current) {
 					}
 				},
 				onClick: function(treeId, treeNode) {
-					window.scrollBy(0,400);	
+					window.scrollBy(0,-400);	
 				},
 				onRightClick: function(event, treeId, treeNode) {
 					if(treeNode.id == 1){
