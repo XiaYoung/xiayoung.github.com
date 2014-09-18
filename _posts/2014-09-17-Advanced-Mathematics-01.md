@@ -60,7 +60,7 @@ tags: [ Advanced Mathematics]
 
 ---
 
-#### Tex  
+### Tex  
 
 |符号|tex写法|含义|  
 |---|---|---|  
