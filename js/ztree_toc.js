@@ -317,7 +317,7 @@ function factor(opts ,count,current) {
 				//	window.scrollBy(0,10);
 					
 					var _targetTop = $('#'+treeNode.id).offset().top;//获取位置
-					console.log(var _targetTop);
+					console.log(_targetTop);
 					//jQuery("html,body").animate({scrollTop:_targetTop},300);//跳转
 				},
 				onRightClick: function(event, treeId, treeNode) {
