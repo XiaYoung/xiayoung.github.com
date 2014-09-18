@@ -301,7 +301,6 @@ function factor(opts ,count,current) {
 			},
 			callback: {
 				beforeClick: function(treeId, treeNode) {
-					window.scrollBy(0,-400);
 					$('a').removeClass('curSelectedNode');
 					if(treeNode.id == 1){
 						// TODO: when click root node
@@ -313,6 +312,9 @@ function factor(opts ,count,current) {
 							$(this).show().css('color','black');
 						});
 					}
+				},
+				onClick: function(treeId, treeNode) {
+					window.scrollBy(0,400);	
 				},
 				onRightClick: function(event, treeId, treeNode) {
 					if(treeNode.id == 1){
