@@ -314,8 +314,12 @@ function factor(opts ,count,current) {
 					}
 				},
 				onClick: function(event, treeId, treeNode) {
-					window.scrollBy(0,10);
+				//	window.scrollBy(0,10);
 					console.log('onclick!!!!');
+				},
+				afterClick: function(event, treeId, treeNode) {
+					window.scrollBy(0,10);
+					console.log('afterclick!!!!');
 				},
 				onRightClick: function(event, treeId, treeNode) {
 					if(treeNode.id == 1){
