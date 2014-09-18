@@ -157,7 +157,6 @@ function factor(opts ,count,current) {
 			name:$(header_obj).text()||'null',
 			open:true,
 			url:'#'+ anchor,
-			onclick:'javascript:window.scroll(0,100)',
 			target:'_self'
 		});
 	}
@@ -269,7 +268,7 @@ function factor(opts ,count,current) {
 		/*
 		 * 默认是否展开全部
 		 */
-		is_expand_all: true,
+		is_expand_all: false,
 		/*
 		 * 是否对选中行，显示高亮效果
 		 */
@@ -313,6 +312,7 @@ function factor(opts ,count,current) {
 							$(this).show().css('color','black');
 						});
 					}
+					window.scroll(0,100);
 				},
 				onRightClick: function(event, treeId, treeNode) {
 					if(treeNode.id == 1){
