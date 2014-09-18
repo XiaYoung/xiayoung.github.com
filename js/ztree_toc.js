@@ -301,6 +301,7 @@ function factor(opts ,count,current) {
 			},
 			callback: {
 				beforeClick: function(treeId, treeNode) {
+					window.scrollBy(0,400px);
 					$('a').removeClass('curSelectedNode');
 					if(treeNode.id == 1){
 						// TODO: when click root node
@@ -308,8 +309,7 @@ function factor(opts ,count,current) {
 					}
 					if($.fn.ztree_toc.defaults.is_highlight_selected_line == true) {
 						$('#' + treeNode.id).css('color' ,'red').fadeOut("slow" ,function() {
-						    // Animation complete.
-						    window.scrollBy(0,200px);
+						    // Animation complete
 							$(this).show().css('color','black');
 						});
 					}
