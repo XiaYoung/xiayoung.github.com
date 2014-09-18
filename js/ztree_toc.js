@@ -310,9 +310,9 @@ function factor(opts ,count,current) {
 						$('#' + treeNode.id).css('color' ,'red').fadeOut("slow" ,function() {
 						    // Animation complete.
 							$(this).show().css('color','black');
+							window.scroll(0,100);
 						});
 					}
-					window.scroll(0,100);
 				},
 				onRightClick: function(event, treeId, treeNode) {
 					if(treeNode.id == 1){
