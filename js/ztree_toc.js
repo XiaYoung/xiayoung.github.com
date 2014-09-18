@@ -313,8 +313,9 @@ function factor(opts ,count,current) {
 						});
 					}
 				},
-				onClick: function(treeId, treeNode) {
-					window.scrollBy(0,-400);	
+				onClick: function(event, treeId, treeNode) {
+					window.scrollBy(0,-400);
+					console.log('onclick!!!!');
 				},
 				onRightClick: function(event, treeId, treeNode) {
 					if(treeNode.id == 1){
