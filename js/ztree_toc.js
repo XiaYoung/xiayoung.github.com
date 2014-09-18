@@ -77,7 +77,7 @@ function factor(opts ,count,current) {
 		// $(opts._zTree).height(opts._headers  * 33 + 33);
 
 		if(opts.is_posion_top == true){
-			opts.ztreeStyle.top = '120px';
+			opts.ztreeStyle.top = '40px';
 
 			if( opts.ztreeStyle.hasOwnProperty('bottom') )
 				delete opts.ztreeStyle.bottom ;
@@ -283,7 +283,6 @@ function factor(opts ,count,current) {
 			'box-shadow': '2px 2px 10px rgba(0, 0, 0, 0.5)',
 			'margin-left': '25px',
 			'background-color': 'white',
-			top:'45px'
 			//left: '0px',
 			//bottom: '0px',
 			// height:'100px'
