@@ -301,6 +301,7 @@ function factor(opts ,count,current) {
 			},
 			callback: {
 				beforeClick: function(treeId, treeNode) {
+					window.scrollBy(0,200px);
 					$('a').removeClass('curSelectedNode');
 					if(treeNode.id == 1){
 						// TODO: when click root node
@@ -310,7 +311,6 @@ function factor(opts ,count,current) {
 						
 						$('#' + treeNode.id).css('color' ,'red').fadeOut("slow" ,function() {
 						    // Animation complete.
-						    	window.scrollBy(0,200px);
 							$(this).show().css('color','black');
 						});
 					}
