@@ -19,7 +19,7 @@ tags : [Data structure]
 <svg width="200" height="200">
   <circle r="20" cy="100" cx="100" stroke-width="2" stroke="#000" fill="red"/>
   <text x="100" y="100" font-size="16" fill="#000">A</text>
-
+  <text x="20" y="150" font-size="16" fill="#000">只有根节点的树</text>
   
 </svg>  
 
@@ -65,8 +65,9 @@ tags : [Data structure]
   <text font-size="16" x="40" y="320" fill="#000">K</text>
   <circle r="20" cx="110" cy="320" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="110" y="320" fill="#000">L</text>
-   <circle r="20" cx="250" cy="320" stroke-width="2" stroke="#000" fill="red"/>
+  <circle r="20" cx="250" cy="320" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="250" y="320" fill="#000">M</text>
+  <text font-size="16" x="270" y="320" fill="#000">有13个结点的树</text>
   
 </svg>
 
