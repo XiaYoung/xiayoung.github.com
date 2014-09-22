@@ -24,10 +24,12 @@ tags : [Data structure]
 </svg>  
 
 <svg width="400" height="400">
+
+  <line x1="100" y1="160" x2="200" y2="80" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="200" cy="80" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="200" y="80"  fill="#000">A</text>
 
-  <line x1="100" y1="160" x2="200" y2="80" style ="stroke-width: 2; stroke: #00ff00;" /> 
+
   <circle r="20" cx="100" cy="160" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="100" y="160" fill="#000">B</text>
   <line x1="200" y1="160" x2="200" y2="80" style ="stroke-width: 2; stroke: #00ff00;" /> 
