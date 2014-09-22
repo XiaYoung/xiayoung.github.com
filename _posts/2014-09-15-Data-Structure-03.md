@@ -3,7 +3,7 @@ layout : post
 category : MSE
 tags : [Data structure, progaming basic] 
 ---
-##第二章 栈和队列 
+##第三章 栈和队列 
 
 ### **第一节 栈**  
 
