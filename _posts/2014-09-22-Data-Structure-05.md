@@ -67,7 +67,7 @@ tags : [Data structure]
   
   <line x1="250" y1="320" x2="250" y2="240" stroke-width = "2" stroke = "green" />
   <circle r="20" cx="250" cy="320" stroke-width="2" stroke="#000" fill="red"/>
-  <text font-size="24" x="300" y="320" fill="#000">M</text>
+  <text font-size="24" cx="250" cy="320" fill="#000">M</text>
   
 </svg>
 
