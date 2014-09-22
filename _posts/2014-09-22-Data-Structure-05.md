@@ -27,45 +27,45 @@ tags : [Data structure]
   <circle r="20" cx="200" cy="80" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="200" y="80"  fill="#000">A</text>
 
-  <line x1="100" y1="160" x2="200" y2="80" style ="stroke-width: 2; stroke: #ff0000;" />
+  <line x1="100" y1="160" x2="200" y2="80" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="100" cy="160" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="100" y="160" fill="#000">B</text>
-  <line x1="200" y1="160" x2="200" y2="80" stroke-width = "2" stroke = "green" />
+  <line x1="200" y1="160" x2="200" y2="80" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="200"  cy="160" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="200" y="160" fill="#000">C</text>
-  <line x1="300" y1="160" x2="200" y2="80" stroke-width = "2" stroke = "green" />
+  <line x1="300" y1="160" x2="200" y2="80" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="300" cy="160" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="300" y="160" fill="#000">D</text>
 
-  <line x1="70" y1="240" x2="100" y2="160" stroke-width = "2" stroke = "green" />
+  <line x1="70" y1="240" x2="100" y2="160" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="70" cy="240" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="70" y="240" fill="#000">E</text>
-  <line x1="130" y1="240" x2="100" y2="160" stroke-width = "2" stroke = "green" />
+  <line x1="130" y1="240" x2="100" y2="160" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="130" cy="240" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="130" y="240" fill="#000">F</text>
   
-  <line x1="200" y1="240" x2="200" y2="160" stroke-width = "2" stroke = "green" />
+  <line x1="200" y1="240" x2="200" y2="160" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="200"  cy="240" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="200" y="240" fill="#000">G</text>
   
-  <line x1="250" y1="240" x2="300" y2="160" stroke-width = "2" stroke = "green" />
+  <line x1="250" y1="240" x2="300" y2="160" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="250" cy="240" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="250" y="240" fill="#000">H</text>
-  <line x1="300" y1="240" x2="300" y2="160" stroke-width = "2" stroke = "green" />
+  <line x1="300" y1="240" x2="300" y2="160" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="300" cy="240" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="300" y="240" fill="#000">I</text>
-  <line x1="350" y1="240" x2="300" y2="160" stroke-width = "2" stroke = "green" />
+  <line x1="350" y1="240" x2="300" y2="160" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="350" cy="240" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="350" y="240" fill="#000">J</text>
   
-  <line x1="40" y1="320" x2="70" y2="240" stroke-width = "2" stroke = "green" />
+  <line x1="40" y1="320" x2="70" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="40" cy="320" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="40" y="320" fill="#000">K</text>
-  <line x1="110" y1="320" x2="70" y2="240" stroke-width = "2" stroke = "green" />
+  <line x1="110" y1="320" x2="70" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="110" cy="320" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="110" y="320" fill="#000">L</text>
   
-  <line x1="250" y1="320" x2="250" y2="240" stroke-width = "2" stroke = "green" />
+  <line x1="250" y1="320" x2="250" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <circle r="20" cx="250" cy="320" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="250" y="320" fill="#000">M</text>
   
