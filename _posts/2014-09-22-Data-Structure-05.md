@@ -11,7 +11,14 @@ tags : [Data structure]
 
 *  树是有n(n≥0)个结点的有限集合。
 *  如果 n = 0, 称为空树；
-<svg width="480" height="320"><line x1="200" y1="40" x2="120" y2="120" style="stroke: #ff0000; stroke-width: 2;"></line><line x1="200" y1="40" x2="280" y2="120" style="stroke: #ff0000; stroke-width: 2;"></line><circle cx="200" cy="40" r="8" stroke="green" stroke-width="1" fill="yellow"></circle><text x="195" y="45" fill="red">2</text><circle cx="120" cy="120" r="8" stroke="green" stroke-width="1" fill="yellow"></circle><text x="115" y="125" fill="red">1</text><line x1="280" y1="120" x2="120" y2="200" style="stroke: #ff0000; stroke-width: 2;"></line><line x1="280" y1="120" x2="440" y2="200" style="stroke: #ff0000; stroke-width: 2;"></line><circle cx="280" cy="120" r="8" stroke="green" stroke-width="1" fill="yellow"></circle><text x="275" y="125" fill="red">6</text><line x1="120" y1="200" x2="40" y2="280" style="stroke: #ff0000; stroke-width: 2;"></line><line x1="120" y1="200" x2="200" y2="280" style="stroke: #ff0000; stroke-width: 2;"></line><circle cx="120" cy="200" r="8" stroke="green" stroke-width="1" fill="yellow"></circle><text x="115" y="205" fill="red">4</text><line x1="440" y1="200" x2="360" y2="280" style="stroke: #ff0000; stroke-width: 2;"></line><circle cx="440" cy="200" r="8" stroke="green" stroke-width="1" fill="yellow"></circle><text x="435" y="205" fill="red">8</text><circle cx="40" cy="280" r="8" stroke="green" stroke-width="1" fill="yellow"></circle><text x="35" y="285" fill="red">3</text><circle cx="200" cy="280" r="8" stroke="green" stroke-width="1" fill="yellow"></circle><text x="195" y="285" fill="red">5</text><circle cx="360" cy="280" r="8" stroke="green" stroke-width="1" fill="yellow"></circle><text x="355" y="285" fill="red">7</text></svg>
+*  如果 n>0,称为非空树，对于非空树，有且仅有一个特定的称为根（Root）的结点（无直接前驱）
+*  如果n>1, 则除根以外的其它结点划分为m(m>0)个互不相交的有限集 T1，T2，..., Tm, 其中每个集合本身又是一棵树， 并且称为根的子树（SubTree）.
+*  每个结点都有唯一的直接前驱，但可能有多个后继
+* 例子
+<svg width="580" height="400">
+  <ellipse ry="31" rx="31" id="svg_1" cy="100" cx="116" stroke-width="2" stroke="#000" fill="#fff"/>
+  <text font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="107" x="109" stroke-width="0" stroke="#000" fill="#000000">A</text>
+</svg>
 
 ####  二、树的基本术语  
 
