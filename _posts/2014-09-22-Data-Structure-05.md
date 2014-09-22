@@ -14,10 +14,11 @@ tags : [Data structure]
 *  如果 n>0,称为非空树，对于非空树，有且仅有一个特定的称为根（Root）的结点（无直接前驱）
 *  如果n>1, 则除根以外的其它结点划分为m(m>0)个互不相交的有限集 T1，T2，..., Tm, 其中每个集合本身又是一棵树， 并且称为根的子树（SubTree）.
 *  每个结点都有唯一的直接前驱，但可能有多个后继
-* 例子
+* 例子  
+
 <svg width="580" height="400">
-  <ellipse ry="31" rx="31" id="svg_1" cy="100" cx="116" stroke-width="2" stroke="#000" fill="#fff"/>
-  <text font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="107" x="109" stroke-width="0" stroke="#000" fill="#000000">A</text>
+  <circle r="30" cy="100" cx="100" stroke-width="2" stroke="#000" fill="red"/>
+  <text x="100" y="100" fill="#000000">A</text>
 </svg>
 
 ####  二、树的基本术语  
