@@ -125,7 +125,7 @@ tags : [Nutrition]
 
 *  食物蛋白中一些含量相对较低的必需氨基酸
 *  由于它们的存在，导致该食物蛋白质中其他必需氨基酸在体内不能被充分利用
-*  植物蛋白常见限制性氨基酸：赖、单、苏、色
+*  植物蛋白常见限制性氨基酸：赖、蛋、苏、色
 
 #### (4)Classification of protein    
 
@@ -151,10 +151,138 @@ tags : [Nutrition]
 
 ### 3.蛋白质-机体的利用与需要量 protein-how our body use it and how much we need  
 
+####(1)Digestion & absorption of protein
+
+*  胃 
+	* 胃酸 gastric acid 胃蛋白酶 pepsin
+	* 转化为多肽、少量氨基酸
+*  小肠
+	* 胰蛋白酶trypsin 肠蛋白酶 ereptase
+	* 寡肽、三肽、二肽、氨基酸
+*  小肠黏膜上皮细胞（主要吸收场所）
+	* 小肠细胞表面肽酶 peptidase
+	* 氨基酸 
+
+####(2)Amino acid pool 氨基酸池
+
+*  存在于人体个组织、器官和体液中的游离氨基酸(free amino acids )的统称
+* 每天全身的蛋白质约有3%被更新
+
+####(4)Metabolism of  amino acid pool
+
+* 注入
+	* 食物
+	* 组织蛋白（分解）
+	* 体内含氮化合物 
+*  输出
+	* （合成新的）组织蛋白
+	* （合成新的）体内含氮化合物
+	* （转化为）糖原/脂肪
+	* （代谢转变成）尿素、氨、尿酸、肌酐（由尿液排出）
+
+####(5)Nitrogen balance  氮平衡
+
+* B = I - (U + F + S)  
+* B：氮平衡  
+* I：摄入氮  
+* U：尿氮  
+* F：粪氮  
+*  S：皮肤等氮损失 
+
+####(6)Reference daily intake of protein
+
+* 成人：
+	* 0.8g/(kg·day) 每天每公斤体重
+	* 中国1.16g/(kg·day) 中国多是植物性蛋白，吸收差应多一些
+	* 10%~12%膳食总能量
+* 儿童：
+	* 12%~14%膳食总能量 
+
+####(7)Excessive protein intake is harmful
+
+*  蛋白质摄入过多
+	* 增加肾脏负担
+	* 加快钙流失，易发生骨质疏松
+	* 可能增加脂肪、胆固醇摄入
+
 ### 4.蛋白质-聚焦肽类 protein-focusing on peptide  
+
+#### (1)What is peptide? 肽
+
+*  蛋白质的不完全分解的产物（完全分级就是氨基酸）
+*  氨基酸按一定顺序排列构成
+*  每种肽都有独特的组成结构，不同结构决定不同功能
+*  生物体内存在微量游离肽，却具有显著生理活性
+*  其中可调节生物体生理功能的称为生物活性肽（biopeptide）
+
+#### (2)Peptide revolution 
+
+*  蛋白质吸收
+	* 完整寡肽可直接吸收
+	* 与氨基酸吸收通道不同
+	*  寡肽吸收速度比氨基酸快
+*  蛋白质利用
+	* 被吸收的寡肽利用效率高于氨基酸，生物效价高于游离氨基酸
+*  肽药理学
+	* 抗微生物
+	* 免疫调节
+	* 抗高血压
+	* 调节血糖、血脂
+	* 抗氧化
+	* 改善矿物质吸收
+	* 促进生长  
+
+#### (3)Classification of biopeptide
+
+* 功能
+	* 生理活性肽
+	* 食品感官肽（酸甜苦咸味道，色泽，软硬度，食品添加剂。阿斯巴甜=苯丙氨酸+天冬氨酸）
+* 来源
+	* 内源性生物活性肽（人体自身生成的，肽类激素）
+	* 外源性生物活性肽
+* 分布  
+	* 海洋生物活性肽
+	* 陆地生物活性肽  
+
+#### (3)Application peptide  
+
+*  人类临床营养
+*  运动营养
+*  保健食品
 
 ### 参考文献 reference  
 
+网址链接：
+
+1.http://www.who.int/nutgrowthdb/publications/worldwide_magnitude/en/
+
+2.http://www.who.int/elena/titles/energy_protein_pregnancy/en/
+
+3.http://www.who.int/nutrition/publications/nutrientrequirements/WHO_TRS_935/en/
+
+4.中国营养学会网站  www.cnsoc.org
+
+5.美国FDA网站     www.fda.gov
+
+参考文献：
+
+[1]黄玉莲, 张文学.功能性多肽及其在食品中的应用[J].第十一届中国科协年会,2009: 1-4.
+
+[2]李卫林, 汤克勇, 曹健.生物活性多肽的应用研究[J].粮食加工,2005,30(2): 45-47.
+
+[3]曾晓波, 王海英, 林永成.食物中的生物活性肽:生物活性及研究进展[J].食品工业科技,2004,25(4): 151-154.
+
+[4]何永水.生物活性肽及其在军用功能性食品中应用展望[J].解放军预防医学杂志,2007,25(6): 457-459.
+
+[5]李琳, 赵谋明.食物源活性肽结构-特性关系的研究进展[J].食品科技,2006,31(3): 8-11.
+
+[6]李媛媛.科学选用蛋白质食物[J].食品与健康,2010(5): 13.
+
+[7]Kitts DD, Weiler K.Bioactive proteins and peptides from food sources. Applications of bioprocesses used in isolation and recovery[J].Current Pharmaceutical Design,2003, 9(16):1309-1323.
+
+[8]Kilara A, Panyam D.Peptides from milk proteins and their properties[J].Critical Reviews in Food Science and Nutrition, 2003,43(6):607-633.
+
+[9]Korhonen H, Pihlanto A. Food-derived bioactive peptides opportunities for designing future foods[J].Current Pharmaceutical Design,2003, 9(16):1297-1308.
 
 ## 脂类（Lipids）
 
