@@ -50,7 +50,7 @@ tags : [Nutrition]
 *  提供能量 Providing energy
 	* 16.7 KJ (4.0kacl)/g  
 
-#### (2) What if protein in deficiency
+#### (3) What if protein in deficiency
 
 *  头发枯黄、断裂、指甲易裂、易断、生倒刺  
 *  肌肉松弛、缺乏弹性、皮肤粗糙、无光泽
@@ -61,7 +61,7 @@ tags : [Nutrition]
 *  严重缺乏可导致水肿
 *  消瘦、儿童体形矮小
 
-#### (2) Severe protein in deficiency
+#### (4) Severe protein in deficiency
 
 *  蛋白质-能量营养不良 Protein-energy malnutrition (PEM)  
 * Kwashiokor
@@ -75,7 +75,7 @@ tags : [Nutrition]
 	* 无明显水肿
 	* 毛发稀疏、干枯、脱发
 
-#### (3) Food source of protein
+#### (5) Food source of protein
 
 |来源|含量|
 |--|--|
