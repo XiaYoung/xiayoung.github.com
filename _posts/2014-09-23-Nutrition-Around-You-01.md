@@ -151,7 +151,7 @@ tags : [Nutrition]
 
 ### 3.蛋白质-机体的利用与需要量 protein-how our body use it and how much we need  
 
-####(1)Digestion & absorption of protein
+#### (1)Digestion & absorption of protein
 
 *  胃 
 	* 胃酸 gastric acid 胃蛋白酶 pepsin
@@ -163,12 +163,12 @@ tags : [Nutrition]
 	* 小肠细胞表面肽酶 peptidase
 	* 氨基酸 
 
-####(2)Amino acid pool 氨基酸池
+#### (2)Amino acid pool 氨基酸池
 
 *  存在于人体个组织、器官和体液中的游离氨基酸(free amino acids )的统称
 * 每天全身的蛋白质约有3%被更新
 
-####(4)Metabolism of  amino acid pool
+#### (3)Metabolism of  amino acid pool
 
 * 注入
 	* 食物
@@ -180,7 +180,7 @@ tags : [Nutrition]
 	* （转化为）糖原/脂肪
 	* （代谢转变成）尿素、氨、尿酸、肌酐（由尿液排出）
 
-####(5)Nitrogen balance  氮平衡
+#### (4)Nitrogen balance  氮平衡
 
 * B = I - (U + F + S)  
 * B：氮平衡  
@@ -189,7 +189,7 @@ tags : [Nutrition]
 * F：粪氮  
 *  S：皮肤等氮损失 
 
-####(6)Reference daily intake of protein
+#### (5)Reference daily intake of protein
 
 * 成人：
 	* 0.8g/(kg·day) 每天每公斤体重
@@ -198,7 +198,7 @@ tags : [Nutrition]
 * 儿童：
 	* 12%~14%膳食总能量 
 
-####(7)Excessive protein intake is harmful
+#### (6)Excessive protein intake is harmful
 
 *  蛋白质摄入过多
 	* 增加肾脏负担
@@ -244,7 +244,7 @@ tags : [Nutrition]
 	* 海洋生物活性肽
 	* 陆地生物活性肽  
 
-#### (3)Application peptide  
+#### (4)Application peptide  
 
 *  人类临床营养
 *  运动营养
