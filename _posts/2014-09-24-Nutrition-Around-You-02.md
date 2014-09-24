@@ -41,7 +41,7 @@ tags : [Nutrition]
 * 1 甘油 glycerol + 3 脂肪酸 fatty acids = 1  甘油三脂 triglyceride
 *  脂肪酸的链有长有短
 
-#### (2) Classification of fatty acids
+#### (3) Classification of fatty acids
 
 ##### 按碳链的长短  
 
@@ -66,7 +66,7 @@ tags : [Nutrition]
 *  顺式 cis-
 *  反式 trans-
 
-#### (3)Trans-fatty acids反式脂肪酸
+#### (4)Trans-fatty acids反式脂肪酸
 
 *  危害
 	*  升高血胆固醇（LDC-C） 导致 动脉粥样硬化 （Atherosclerosis）
@@ -179,8 +179,69 @@ tags : [Nutrition]
   	
 $$C_{22}: 6, n-3, 6, 9, 12, 15, 18  \quad all \quad  cis$$    
 
-  
+*  种类
+	|名称|代号|
+	|-
+	|丁酸 butyric acid|C4:0|
+	|月桂酸 lauric acid|C12:0|
+	|棕榈酸 palmitic acid|C6:0|
+	|棕榈油酸 palmitoleic acid|C16:1, n-7 cis|
+	|硬脂酸 stearic acid|C18:0|
+	|油酸 oleic acid|C18:1,n-9 cis|
+	|反油酸 elaidic acid|C18:1,n-9 trans|
+	|亚油酸 linoleic acid|C18:2,n-6,9 all cis|
+	|α-亚麻酸 α-linolenic acid|C18:3,n-3,6,9 all cis|
+	|γ-亚麻酸 γ-linolenic acid|C18:3,n-6,9,12 all cis|
+	|花生四烯酸 arachidonic acid|C20:4,n-6,9,12,15 all cis|
+	|二十碳五烯酸 timnodonic acid, EPA|C20:5,n-3,6,9,12,15 all cis|
+	|芥子酸erucic acid|C22:1,n-9 cis|
+	|二十二碳六烯酸 docosahexenoic acid, DHA|C22:6,n-3,6,9,12,15,18 all cis|
+	|二十四碳氮烯酸（神经酸）nervonic acid|C24:1,n-9 cis|  
 
+*   n-6 PUFA & n-3 PUFA
+	*  n-6
+		*  亚油酸 花生四烯酸
+		*  纯植物来源 烹调植物油
+		* 构成磷脂 促进发育 调节血脂 抗炎 等
+	* n-3
+		* α-亚麻酸 为母体
+		* 植物油&鱼油 
+		* 维持视觉 促进大脑发育 降血脂 抗炎 调节免疫 抗肿瘤
+	* 推荐比例
+		* n-6 : n-3 =4~6 :1   
+
+  ### 参考文献 reference  
+
+网址链接：
+
+
+① http://www.cnsoc.org/cn/search_info.asp?nid=505
+
+② http://www.who.int/mediacentre/factsheets/fs311/en/
+
+③  http://www.who.int/nutrition/topics/obesity/en/
+
+参考文献：
+
+[1]赵荣乐.脂类代谢与人体健康[J].生物学通报,2002(05):19-21.
+
+[2]谢明勇等.反式脂肪酸研究进展[J].中国食品学报,2010,10(04):14-26.
+
+[3]田雨,赵连成.反式脂肪酸与人体健康[J].中国预防医学杂志,2011,(10):894-898.
+
+[4]郭玉华,李钰金.水产品中EPA和DHA的研究进展[J].肉类研究,2011(01):82-86.
+
+[5]孙岩.磷脂的生理功能及其应用[J].养殖技术顾问,2006(01):22-23.
+
+[6]Baum,S.J..EPA and DHA: distinct yet essential n-3 fatty acids.J Clin Lipidol,2012.6(5):477-479.
+
+[7]Shader,R.I..Saturated and trans fats.Clin Ther,2014.36(3):309-310.
+
+[8]Derbyshire,E..Trans fats: implications for health. Nurs Stand,2012.27(3):51-58.
+
+[9]Howles,P.N..Cholesterol absorption and metabolism.Methods Mol Biol,2010.602: p.157-179.
+
+[10]Dhaka,V., et al..Trans fats-sources, health risks and alternative approach - A review.J Food Sci Technol,2011. 48(5):534-541.
 
 
 
