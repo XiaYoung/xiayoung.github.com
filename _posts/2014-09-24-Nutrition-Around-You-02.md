@@ -126,56 +126,58 @@ tags : [Nutrition]
 	*  双键的位置按前面一个C原子位置编号
 	*  表达式：  
 	$$C_a:b,n-c,d,e... cis/trans$$  
-	a 碳原子的个数
-	b 不饱和双键的个数
-	d e ... 双键的位置
-	cis 顺式/ trans 反式
+	a 碳原子的个数  
+	b 不饱和双键的个数  
+	d e ... 双键的位置  
+	cis 顺式/ trans 反式  
 	* 例子 DHA  
 
 <svg width="480" height="100">
-  <text font-size="16" x="15" y="60"  fill="#000">HO</text>
+  <text font-size="16" x="5" y="60"  fill="#000">HO</text>
   <line x1="20" y1="60" x2="40" y2="40" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="40" y1="40" x2="40" y2="20" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="45" y1="40" x2="45" y2="20" style ="stroke-width: 2; stroke: #00ff00;" /> 
-  <text font-size="16" x="40" y="10"  fill="#000">O</text>
+  <text font-size="16" x="40" y="20"  fill="#000">O</text>
   <line x1="40" y1="40" x2="60" y2="60" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="60" y1="60" x2="80" y2="40" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="80" y1="40" x2="100" y2="60" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="100" y1="60" x2="120" y2="60" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="100" y1="55" x2="120" y2="55" style ="stroke-width: 2; stroke: #00ff00;" /> 
-  <text font-size="16" x="120" y="50"  fill="#000">18</text> 
+  <text font-size="16" x="120" y="40"  fill="#000">18</text> 
   <line x1="120" y1="60" x2="140" y2="40" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="140" y1="40" x2="160" y2="60" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="160" y1="60" x2="180" y2="60" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="160" y1="55" x2="180" y2="55" style ="stroke-width: 2; stroke: #00ff00;" /> 
-  <text font-size="16" x="180" y="50"  fill="#000">15</text> 
+  <text font-size="16" x="180" y="40"  fill="#000">15</text> 
   <line x1="180" y1="60" x2="200" y2="40" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="200" y1="40" x2="220" y2="60" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="220" y1="60" x2="240" y2="60" style ="stroke-width: 2; stroke: #00ff00;" />
   <line x1="220" y1="55" x2="240" y2="55" style ="stroke-width: 2; stroke: #00ff00;" />
-   <text font-size="16" x="240" y="30"  fill="#000">DHA</text> 
-  <text font-size="16" x="240" y="50"  fill="#000">12</text> 
+   <text font-size="16" x="240" y="20"  fill="#000">DHA</text> 
+  <text font-size="16" x="240" y="40"  fill="#000">12</text> 
   <line x1="240" y1="60" x2="260" y2="40" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="260" y1="40" x2="280" y2="60" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="280" y1="60" x2="300" y2="60" style ="stroke-width: 2; stroke: #00ff00;" />
   <line x1="280" y1="55" x2="300" y2="55" style ="stroke-width: 2; stroke: #00ff00;" />  
-  <text font-size="16" x="300" y="50"  fill="#000">9</text>
+  <text font-size="16" x="300" y="40"  fill="#000">9</text>
   <line x1="300" y1="60" x2="320" y2="40" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="320" y1="40" x2="340" y2="60" style ="stroke-width: 2; stroke: #00ff00;" />  
   <line x1="340" y1="60" x2="360" y2="60" style ="stroke-width: 2; stroke: #00ff00;" />
   <line x1="340" y1="55" x2="360" y2="55" style ="stroke-width: 2; stroke: #00ff00;" />  
-  <text font-size="16" x="360" y="50"  fill="#000">6</text>
+  <text font-size="16" x="360" y="40"  fill="#000">6</text>
   <line x1="360" y1="60" x2="380" y2="40" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="380" y1="40" x2="400" y2="60" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="400" y1="60" x2="420" y2="60" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="400" y1="55" x2="420" y2="55" style ="stroke-width: 2; stroke: #00ff00;" /> 
-  <text font-size="16" x="420" y="50"  fill="#000">3</text>
+  <text font-size="16" x="420" y="40"  fill="#000">3</text>
   <line x1="420" y1="60" x2="440" y2="40" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="440" y1="40" x2="460" y2="60" style ="stroke-width: 2; stroke: #00ff00;" /> 
-  <text font-size="16" x="460" y="50"  fill="#000">1</text>
-  <text font-size="16" x="460" y="30"  fill="#000">n(ω)</text>
- </svg>
-	
+  <text font-size="16" x="460" y="40"  fill="#000">1</text>
+  <text font-size="16" x="450" y="20"  fill="#ff0000">n(ω)</text>
+  </svg>
+
+  	
+$$C_{22}: 6, n-3, 6, 9, 12, 15, 18  \quad all \quad  cis$$    
 
   
 
