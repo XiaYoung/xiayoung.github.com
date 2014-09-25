@@ -221,11 +221,7 @@ tags : [Data structure]
   <line x1="175" y1="320" x2="150" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
       
   <line x1="225" y1="320" x2="250" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
-  <line x1="275" y1="320" x2="250" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
 
-  <line x1="325" y1="320" x2="350" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
-  <line x1="375" y1="320" x2="350" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
-     
   <circle r="20" cx="200" cy="80" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="200" y="80"  fill="#000">1</text>
 
@@ -294,12 +290,7 @@ tags : [Data structure]
   <line x1="125" y1="320" x2="150" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
   <line x1="175" y1="320" x2="150" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
       
-  <line x1="225" y1="320" x2="250" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
-  <line x1="275" y1="320" x2="250" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
 
-  <line x1="325" y1="320" x2="350" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
-  <line x1="375" y1="320" x2="350" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
-     
   <circle r="20" cx="200" cy="80" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="200" y="80"  fill="#000">1</text>
 
@@ -394,9 +385,9 @@ tags : [Data structure]
 				TElemType data;
 				struct BiTNode *lChild, *rChild;
 			} BiTNode, *BiTree;
-	*  例子：
+	*  例子：  
 	
-	<svg width="580" height="400">
+<svg width="580" height="400">
   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_11" y2="287.5" x2="197.5" y1="170.5" x1="117.5" stroke-width="1.5" stroke="#000" fill="none"/>
   <ellipse ry="19" rx="22" id="svg_1" cy="272.5" cx="198" stroke-width="1.5" stroke="#000" fill="#fff"/>
   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_10" y2="207.5" x2="87.5" y1="111.5" x1="142.5" stroke-width="1.5" stroke="#000" fill="none"/>
@@ -448,10 +439,10 @@ tags : [Data structure]
   <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_52" y="281.5" x="345.5" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">^</text>
   <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_53" y="281.5" x="412.5" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">^</text>
   <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_54" y="282.5" x="468.5" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">^</text>
+</svg>    
 
-</svg>  
 
-* 三叉链表  
+*  三叉链表   
 
 ### **第三节 遍历二叉树**  
 
