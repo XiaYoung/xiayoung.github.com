@@ -34,7 +34,7 @@ tags : [Nutrition]
 		* 甘油三酯 Triglycerides
 	* 类脂 Lipoids
 		* 磷脂 phospolipids
-		* 类固醇 sterols
+		* 固醇类 sterols
 
 #### (2)  Triglyceride 甘油三酯
 
@@ -210,16 +210,194 @@ $$C_{22}: 6, n-3, 6, 9, 12, 15, 18  \quad all \quad  cis$$
 	* 推荐比例
 		* n-6 : n-3 =4~6 :1   
 
+### 3.脂类-脂肪的功能 Lipids-function of fats  
+
+#### (1) Function of body fats 机体脂肪的功能
+
+*  机体脂肪功能
+	1.  贮存/提供能量 storing&providing energy 
+	2.  保温及润滑作用 Preserving heat & lubricating 
+		* 皮下脂肪 subcutaneous fat  (under the skin)保温
+		* 内脏脂肪 visceral fat (around the internal organs)润滑，减少内脏摩擦  
+	3.  参与机体构成 Body component    
+	4.  节约蛋白质作用 Sparing protein action    
+	5.  内分泌作用  Endocrine action     
+*	肥胖（机体脂肪过多）的危害 ，苹果型大于梨形
+	* 高血压  
+	* 高血脂  
+	* 心脏病 脑卒中
+	* 糖尿病  
+	* 脂肪肝 胆结石  
+	* 痛风  关节病  
+	* 心理障碍
+	* 肿瘤 
+	* 睡眠呼吸暂停  
+	*  月经不调/不孕
+* 建议腰围 waist circumference
+	* 男<85cm
+	* 女<80cm     
+
+#### (2) Function of food fats 食物脂肪的功能
+
+*  食物脂肪功能
+	1. 为人体提供能量 Providing energy 39.7KJ(9kcal)/g
+	2. 人体脂肪合成材料 Synthesis of body fat
+	3. 增加饱腹感 Increasing satiety
+	4. 改善食物感官性状 Improving sensory properties
+	5. 提供脂溶性维生素  Providing fat soluble vitamins
+*  食物来源
+	* 动物脂肪 animal fat
+		* 牲畜 
+			* 饱和脂肪酸
+			* 单不饱和脂肪酸
+		* 深海鱼 
+			* EPA
+			* DHA 
+	* 植物油 vegetable oil
+		* 烹调油 
+			* 普遍富含不饱和脂肪酸
+		* 可可油/椰子油/棕榈油
+			* 富含饱和脂肪酸
+
+*  单位质量的家畜家禽的不同脂肪含量
+	* 猪>羊>牛
+		* 饱和脂肪酸为主
+	*鹅>鸭>鸡
+		* 20%亚油酸 
+* 其它食物的隐含脂肪
+	*  奶油蛋糕
+	* 巧克力
+	* 冰激凌 雪糕
+	* 油炸食物 
+	* 西点
+	* 坚果 （油料作物）
+* 坚果和植物油（5g）换算 
+	*  2个核桃
+	* 3个碧根果
+	* 8颗 榛子
+	* 10颗腰果
+	* 10颗巴旦木
+	* 20颗花生米
+	* 20颗开心果
+* 建议坚果摄入量 <50g/周 
+
+### 4.脂类-说说类脂 Lipids-an introduction of lipoids
+
+#### (1) what is Lipoids? 
+
+*  脂类 Lipids
+	* 脂肪 Fats
+		* 甘油三酯 Triglycerides
+	* **类脂 Lipoids**
+		* 磷脂 phospolipids
+		* 固醇类 sterols
+
+####(2) Phospholipids 磷脂
+
+* 磷脂 
+	* 磷酸甘油酯
+		* 卵磷脂 Phosphatidylcholine
+	* 神经鞘脂  
+* Characteristic of Phospholipids 
+	* 磷酸头 hydropjilic 亲水
+	* 脂肪酸链尾 Lyophobic 疏水 
+*  Function of phospholipids 磷脂生理功能
+	1. 	细胞膜成分 Cytomembrane component
+	2. 提供能量 Providing energy
+	3. 乳化剂 Emulsifier
+	4. 改善心血管作用 Improving cardiovascular function
+	5. 改善神经系统功能 Improving 
+*  Food source of phospholipids
+	*  蛋黄
+	* 肝脏
+	* 大豆
+	* 麦胚
+	* 花生  
+	
+#### (3) Sterols 固醇类
+
+* 固醇类
+	* 胆固醇 cholesterol 动物体内
+	* 植物固醇 phytosterol
+*  Function of cholesterol 胆固醇生理功能
+	1. 细胞膜成分 cytomembrane component 
+		*  人体90%胆固醇存在于细胞中
+	2. 活性物质合成材料 Raw material for active substances
+		* 胆汁、性激素、肾上腺素等
+	3. 合成维生素VD3前体物质 Precursor substance of VD3
+		* 7-脱氢胆固醇 + 紫外线 = VD3 促进钙的吸收
+*  Source of cholesterol 胆固醇来源
+	* 自身合成：肝脏、肠壁细胞
+	* 食物来源 人体对胆固醇的吸收率在30%左右：
+		* 内脏
+			* 肝脏
+			* 肾脏
+			* 脑  
+		* 蛋黄
+			* 鸡蛋黄
+			* 鸭蛋黄
+			* 鹅蛋黄
+		* 肉类
+			* 禽肉
+			* 畜肉
+			* 鱼类
+			* 鱿鱼等
+
+*  Phytosterol 植物固醇
+	* 化学结构
+		* 胆固醇侧链上多了甲基或乙基基团
+	* 人体吸收
+		* 吸收率低，仅5%左右
+		* 干扰肠道对胆固醇吸收
+	* 生理作用
+		* 降低血胆固醇作用
+	* 食物来源
+		* 植物油 坚果 种子 豆类
+
+#### (4) Digestion & absorption of lipids 脂类的消化吸收
+
+* 消化
+	*  口腔
+		* 唾液脂肪酶 Saliva lipase
+	* 小肠 
+		* 胆汁 bile
+		* 胰脂肪酶 Pancrelipase 
+* 吸收 
+	*  甘油和短、中链脂肪酸直接吸收入血
+	*  甘油单脂、长链脂肪酸进入小肠细胞重新合成甘油三脂，与磷脂、胆固醇、蛋白质形成乳糜微粒，经淋巴入血
+* 运输
+	* 乳糜微粒 CM
+		* 运输从小肠吸收的外源性甘油三酯、磷脂、胆固醇到肝脏
+	* 极低密度脂蛋白 VLDL
+		* 运输肝脏、小肠合成的内源性甘油三酯、胆固醇等进入血浆
+	* 低密度脂蛋白 LDL
+		* 运输肝内合成的胆固醇等进入血浆
+	* 高密度脂蛋白 HDL
+		* 将胆固醇从肝外组织转运到肝内代谢--"胆固醇的你想转运"
+
+#### (5) How to get lipids healthily?
+
+1.	 占总能量摄入20%~30%，其中饱和脂肪酸<10%;胆固醇<300mg/d（一个中等大小的鸡蛋 259g胆固醇）
+	* 在适宜总能量摄入的基础上控制脂肪摄入	
+2.	 各种脂肪酸摄入比例为饱和脂肪酸:单不饱和脂肪酸:多不饱和脂肪酸 = 1：1：1
+	* 多不饱和脂肪酸摄入过多使体内有害的氧化物、过氧化物等增加
+	* 老年人可适当增加单不饱和脂肪酸比例，相应降低饱和脂肪酸比例
+3.  注意隐形脂肪的摄入，动物内脏、坚果、油炸（油酥）食品以及氢化油等
+	* 动物内脏富含胆固醇
+	* 油炸食品能量翻倍、有害物质增加
+	* 反式脂肪酸是健康杀手，大多数隐藏在氢化植物油烹调的食物中
+
+
 ### 参考文献 reference  
 
 网址链接：
 
 
-① http://www.cnsoc.org/cn/search_info.asp?nid=505
+ http://www.cnsoc.org/cn/search_info.asp?nid=505
 
-② http://www.who.int/mediacentre/factsheets/fs311/en/
+ http://www.who.int/mediacentre/factsheets/fs311/en/
 
-③  http://www.who.int/nutrition/topics/obesity/en/
+  http://www.who.int/nutrition/topics/obesity/en/
 
 参考文献：
 
