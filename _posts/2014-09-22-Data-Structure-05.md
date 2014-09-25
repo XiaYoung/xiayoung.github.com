@@ -288,8 +288,7 @@ tags : [Data structure]
    <line x1="75" y1="320" x2="50" y2="240" style ="stroke-width: 2; stroke: #00ff00;" />   
   
   <line x1="125" y1="320" x2="150" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
-  <line x1="175" y1="320" x2="150" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
-      
+
 
   <circle r="20" cx="200" cy="80" stroke-width="2" stroke="#000" fill="red"/>
   <text font-size="16" x="200" y="80"  fill="#000">1</text>
