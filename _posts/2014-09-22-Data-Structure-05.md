@@ -69,23 +69,137 @@ tags : [Data structure]
   <text font-size="16" x="250" y="320" fill="#000">M</text>
   <text font-size="16" x="270" y="320" fill="#000">有13个结点的树</text>
   
-</svg>
+</svg>  
+
+*  其中：A是根；其余结点分成三个互不相交的子集
+* T1 ={B, E, F, K, L}; T2={C, G}; T3={D, H, I, J,M}
+* T1 T2 T3都是跟A的子树，且本身也是一棵树
 
 ####  二、树的基本术语  
+
+*  **结点**：包含一个数据元素及若干指向其子树的分支
+* **结点的度**：结点拥有的子树数
+* **叶节点**：度为0的结点[没有子树的结点]
+* **分支结点**： 度不为0的结点[包括根结点]，也称为非终端结点。除根外称为内部结点
+* **孩子**：结点的子树的根[直接后继，可能有多个]
+* **双亲**：孩子的直接前驱[最多只能有一个] 
+* **兄弟**：同一双亲的孩子
+* **子孙**：以某结点为根的树中的所有节点
+* **祖先**：从根到该结点所经分支上的所有结点
+* **层次**：根节点为第一层，其孩子为第二层，依次类推
+* **深度**：树中结点的最大层次
+* **森林**：互不相交的树的集合。对树中每个结点而言，其子树的集合即为森林
 
 ### **第二节 二叉树**  
 
 ####  一、二叉树（Binary Tree）   
 
+*  每个节点最多有2棵子树
+*  二叉树的子树有左右之分
+* 种类
+	* 空树
+	* 只有根
+	* 只有左子树
+	* 只有右子树
+	* 有左右子树
+
 ####  二、二叉树性质1    
 
+*  在二叉树的第i层上至多有$$2^{i-1}$$个结点
+*  证明：
+	1. i = 1, 只有一个根节点，因此$$2^{i-1} = 2^0 = 1$$  
+	2. 设第i-1层上，以上性质成立，即第i-1层至多有$$2^{(i-1)-1}$$结点。由二叉树的定义可知，任何结点的度小于2，因此，第i层上的结点数最多为第i-1层上的两倍，即$$2*2^{i-2} = 2^{i-1}$$  
+	
 ####  三、二叉树性质2  
 
+*  深度为k的二叉树至多有$$2^k-1$$个结点 
+*  证明：
+		1. 由性质1，已知第i层上的结点数最多为$$2^{i-1}$$ 
+		2. $$\sum_{i=1}^{k}{2^{i-1}}=2^k-1$$
+
 ####  四、二叉树性质3  
-        
+  
+*  如果二叉树终端结点数为$$n_0$$，度为2的结点数为$$n_2$$，则$$n_0=n_2+1$$  
+*  证明：
+		1. 设$$n_1$$为度为1的结点，则总结点数$$n=n_0+n_1+n_2$$  
+		2. 设B为二叉树的分支数，除根结点外，每个结点有且只有一个（上游）分支，因此	总结点数n = B+1
+		3. 每个分支皆有度为1或2的结点发出，$$B = n_1+2n_2$$  
+		4. $$n = B+1 = (n_1+2n_2)+1 = n_0+n_1+n_2$$, 因此 $$n_0=+n_2+1$$
 ####  五、满二叉树  
 
+*  一个深度为k且有$$2^{k-1}$$个结点的二叉树 
+*  每层上的结点数都是最大数
+*  可以自上而下，自左至右连续编号
+
 ####  六、完全二叉树  
+
+*  当且仅当每一个结点都与深度相同的满二叉树中编号从1到n的结点一一对应的二叉树
+* 叶子结点只在最大的两层上出现
+* 左子树深度与右子树深度相等或大1
+
+<svg width="400" height="400">
+
+  <line x1="100" y1="160" x2="200" y2="80" style ="stroke-width: 2; stroke: #00ff00;" /> 
+  <line x1="300" y1="160" x2="200" y2="80" style ="stroke-width: 2; stroke: #00ff00;" /> 
+  
+  <line x1="50" y1="240" x2="100" y2="160" style ="stroke-width: 2; stroke: #00ff00;" /> 
+  <line x1="150" y1="240" x2="100" y2="160" style ="stroke-width: 2; stroke: #00ff00;" /> 
+  
+  <line x1="250" y1="240" x2="300" y2="160" style ="stroke-width: 2; stroke: #00ff00;" /> 
+  <line x1="350" y1="240" x2="300" y2="160" style ="stroke-width: 2; stroke: #00ff00;" />  
+  
+  <line x1="25" y1="320" x2="50" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
+   <line x1="75" y1="320" x2="50" y2="240" style ="stroke-width: 2; stroke: #00ff00;" />   
+  
+  <line x1="125" y1="320" x2="150" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
+  <line x1="175" y1="320" x2="150" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
+      
+  <line x1="225" y1="320" x2="250" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
+  <line x1="275" y1="320" x2="250" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
+
+  <line x1="325" y1="320" x2="350" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
+  <line x1="375" y1="320" x2="350" y2="240" style ="stroke-width: 2; stroke: #00ff00;" /> 
+     
+  <circle r="20" cx="200" cy="80" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="200" y="80"  fill="#000">1</text>
+
+  <circle r="20" cx="100" cy="160" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="100" y="160" fill="#000">2</text>
+  <circle r="20" cx="300"  cy="160" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="300" y="160" fill="#000">3</text>
+
+  <circle r="20" cx="50" cy="240" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="50" y="240" fill="#000">4</text>
+  <circle r="20" cx="150" cy="240" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="150" y="240" fill="#000">5</text>
+  
+  <circle r="20" cx="250"  cy="240" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="250" y="240" fill="#000">6</text>
+  <circle r="20" cx="350" cy="240" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="350" y="240" fill="#000">7</text>
+  
+  <circle r="20" cx="25" cy="320" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="25" y="320" fill="#000">8</text>
+  <circle r="20" cx="75" cy="320" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="75" y="320" fill="#000">9</text>
+  
+   <circle r="20" cx="125" cy="320" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="125" y="320" fill="#000">10</text>
+  <circle r="20" cx="175" cy="320" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="175" y="320" fill="#000">11</text>
+
+  <circle r="20" cx="225" cy="320" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="225" y="320" fill="#000">12</text>
+  <circle r="20" cx="275" cy="320" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="275" y="320" fill="#000">13</text>
+  
+   <circle r="20" cx="325" cy="320" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="325" y="320" fill="#000">14</text>
+  <circle r="20" cx="375" cy="320" stroke-width="2" stroke="#000" fill="red"/>
+  <text font-size="16" x="375" y="320" fill="#000">15</text>
+  
+</svg>  
+
 
 ####  七、二叉树的顺序存储结构  
 
