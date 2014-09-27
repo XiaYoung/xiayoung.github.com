@@ -7,6 +7,8 @@ tags : [C , programming language]
 
 ## 1 概述  
 
+编译型语言
+
 --- 
 
 ## 2 结构特点 
