@@ -177,10 +177,13 @@ tags : [C , programming language]
 
 ###	5) 常量
 
-#### ①	数字常量
-#### ② 字符常量
-#### ③	符号常量
-#### ④	转义字符
+#### ①	数字常量  
+
+#### ② 字符常量  
+
+#### ③	符号常量  
+
+#### ④	转义字符  
 
 ###	6) 注释符
 
@@ -206,7 +209,7 @@ tags : [C , programming language]
 	*	长整型
 		* long int
 		* long
-	* 	无符号型
+	* 	无符号型  
 		* unsigned int或 unsigned
 		* unsigned short
 		* unsigned long
