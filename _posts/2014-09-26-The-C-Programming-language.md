@@ -202,17 +202,17 @@ tags : [C , programming language]
 		* 十进制
 * 整型变量  
 	* 	基本型  
-		* int  
+		*  int  
 	* 	短整型  
-		* short int  
-		* short  
+		*  short int  
+		*  short  
 	*	长整型  
-		* long int  
-		* long  
+		*  long int  
+		*  long  
 	* 	无符号型    
-		* unsigned int或 unsigned  
-		* unsigned short  
-		* unsigned long  
+		*  unsigned int或 unsigned  
+		*  unsigned short  
+		*  unsigned long  
 
 #### ② 	浮点型/实型
 
