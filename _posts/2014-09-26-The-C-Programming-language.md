@@ -195,24 +195,24 @@ tags : [C , programming language]
 
 #### ①	整型  
 
-* 整型常量
+* 整型常量  
 	*	整常数
 		* 八进制 0开头
 		* 十六进制 0X 0x
 		* 十进制
-* 整型变量
-	* 	基本型
-		* int
-	* 	短整型
-		* short int
-		* short
-	*	长整型
-		* long int
-		* long
-	* 	无符号型  
-		* unsigned int或 unsigned
-		* unsigned short
-		* unsigned long
+* 整型变量  
+	* 	基本型  
+		* int  
+	* 	短整型  
+		* short int  
+		* short  
+	*	长整型  
+		* long int  
+		* long  
+	* 	无符号型    
+		* unsigned int或 unsigned  
+		* unsigned short  
+		* unsigned long  
 
 #### ② 	浮点型/实型
 
@@ -278,8 +278,8 @@ ASCII码
 
 ### 2)	赋值表达式  
 
-	式子x=(a=5)+(b=8) 是赋值表达式
-	按照Ｃ语言规定，任何表达式在其未尾加上分号就构成为语句。因此如x=8;a=b=c=5；都是赋值语句 
+*	式子x=(a=5)+(b=8) 是赋值表达式  
+*	按照Ｃ语言规定，任何表达式在其未尾加上分号就构成为语句。因此如x=8;a=b=c=5；都是赋值语句  
 
 ### 3)	优先级和结合性
 
