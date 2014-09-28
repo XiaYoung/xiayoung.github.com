@@ -1,7 +1,7 @@
 ---
-layout: post
-category: programming language
-tags:[Programming language]
+layout : post
+category : programming language
+tags : [Programming language]
 ---
 
 ### 从小到超大型应用程序
