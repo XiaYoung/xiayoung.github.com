@@ -1,7 +1,7 @@
 ---
 layout : post
 category : programming language
-tags:[Programming language]
+tags : [Programming language]
 ---
 
 # 编程语言原理(第10版)  
