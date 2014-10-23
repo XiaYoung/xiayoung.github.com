@@ -709,13 +709,39 @@ $$\begin{bmatrix} 0 & 1 & 0 & 1 & 1 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 & 1 \\
 
 ####  一、无向图的连通性
 
+*  如果无向图中，存在不连通的顶点，则该图称为非连通图
+
 ####  二、无向图的连通分量 （生成树）
+
+*  非连通图的极大连通子图叫做连通分量
+*  若从无向图的每一个连通分量中的一个顶点出发进行DFS或BFS遍历，可求得无向图的所有连通分量的生成树(DFS或BFS生成树)
+*  所有连通分量的生成树组成了非连通图的生成森凌
 
 ####  三、最小生成树
 
+* 1）定义
+	*  如果无向图中，边上有权值，则称该无向图为无向网
+	*  如果无向网中的每个顶点都相通，称为连通网
+	*  最小生成树(Minimum Cost Spanning Tree)是代价最小的连通网的生成树，即该生成树上的边的权值和最小
+* 2）准则
+	*  必须使用且仅使用连通网中的n-1条边来联结网络中的n个顶点；
+	* 不能使用产生回路的边；
+	* 各边上的权值的总和达到最小 
+
 ####  四、普利姆（prim）算法生成最小生成树 
 
+*  假设N =(V, E)是连通网
+* TE是N上最小生成树中边的集合
+1. $$U=\{u_0\}, (u_0)\in V, TE = \{\}$$
+2. 在所有$$u \in U, v \in V-U$$的边$$(u, v) \in E$$中找一条代价最小的边$$(u, v_0)$$并入集合TE，同时$$v_0$$并入U 
+3. 重复2，直到 U= V
+
 ####  五、克鲁斯卡尔（Kruskal）算法生成最小生成树
+
+*  假设N =(V, E)是连通网
+1.  非连通图 T = {V, {}},图中每个顶点自成一个连通分量
+2.  在E中找一条代价最小，且其两个顶点分别依附不同的连通分量的边，将其加入T中
+3.  重复2，直到T中所有的顶点都在同一连通分量上
 
 ---
 
@@ -723,7 +749,86 @@ $$\begin{bmatrix} 0 & 1 & 0 & 1 & 1 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 & 1 \\
 
 ####  一、最短路径
 
+*  最短路径是求从图（或网）中某一顶点，到其余各顶点的最短路径
+* 最短路径与最小生成树主要有三点不同
+1.  最短路径的操作对象主要是有向图（网），而最小生成树的操作对象是无向图
+2. 最短路径有一个始点，最小生成树没有
+3.  最短路径关心的是始点到每个顶点的路径最短，而最小生成树关心的是整个树的代价最小
+
 ####  二、Dijkstra算法
+
+*  Dijkstra 算法采用按路径长度递增的次序产生最短路径
+*  在Dijkstra算法中，引进了一个辅助向量D
+*  每个分量D[i]表示当前所找到的从始点到每个终点$$v_i$$的最短路径长度 
+*  D[i]初值为始点$$v_0$$到各终点$$v_i$$的直接距离，即若从始点到某终点有（出）弧，则为弧上的权值，否则为$$\infty$$  
+*  对于下图，如果0是始点$$v_0$$，则D[i] 的初值为：$$D[i] =\{5, \infty ,7, 15\}$$  
+*  显然，$$D[j] =Min\{ D[i]  | v_i \in V\}$$是从始点出发的长度最短的一条最短路径 
+ 
+<svg width="279" height="245">
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="90" cy="211.74829" id="svg_3" rx="19.5" ry="19.5"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="81.5" y="220.24829" id="svg_4" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">2</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="131" cy="30.5" id="svg_5" rx="19.5" ry="19.5"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="122.5" y="39" id="svg_6" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">0</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="39" cy="111.5" id="svg_7" rx="19.5" ry="19.5"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="30.5" y="120" id="svg_8" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">1</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="243" cy="102.5" id="svg_9" rx="19.5" ry="19.5"/>
+  <text fill="#000000" stroke-width="0" x="234.5" y="111" id="svg_10" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve" stroke="#000">4</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="199" cy="213.5" id="svg_11" rx="19.5" ry="19.5"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="190.5" y="222" id="svg_12" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">3</text>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="121" y1="47.5" x2="57" y2="101.5" id="svg_29" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="44" y1="131.5" x2="83" y2="197.5" id="svg_30" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="151" y1="42.5" x2="226" y2="88.5" id="svg_31" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="135" y1="51.5" x2="192" y2="194.5" id="svg_32" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="180" y1="216.5" x2="114" y2="214.5" id="svg_33" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="105" y1="197.5" x2="226" y2="114.5" id="svg_34" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="56.00236" y1="101.50043" x2="58.66898" y2="94.16722" id="svg_36" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="57.00235" y1="100.83377" x2="64.66888" y2="101.1671" id="svg_37" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="82.0019" y1="194.49875" x2="83.66853" y2="186.83222" id="svg_38" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="78.3353" y1="193.49877" x2="74.6687" y2="193.49877" id="svg_39" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="112.33469" y1="213.49841" x2="121.33452" y2="209.16516" id="svg_40" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="112.66801" y1="216.49836" x2="118.00125" y2="219.4983" id="svg_41" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="193.99988" y1="193.8321" x2="194.66654" y2="187.83221" id="svg_42" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="192.9999" y1="197.16537" x2="185.6667" y2="193.8321" id="svg_44" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="226.99929" y1="113.50021" x2="225.66598" y2="119.83343" id="svg_45" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="225.33265" y1="113.83354" x2="219.99942" y2="113.83354" id="svg_46" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="227.66594" y1="87.834" x2="224.99933" y2="81.50079" id="svg_47" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" x1="226.66596" y1="90.50062" x2="220.66607" y2="91.16728" id="svg_48" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="108.5" x="133.5" stroke-width="0" stroke="#000" fill="#e01d1d">7</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_13" y="206.5" x="145.5" stroke-width="0" stroke="#000" fill="#e01d1d">2</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_14" y="51.5" x="208.5" stroke-width="0" stroke="#000" fill="#e01d1d">15</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_15" y="64.5" x="74.5" stroke-width="0" stroke="#000" fill="#e01d1d">5</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_16" y="168.5" x="37.5" stroke-width="0" stroke="#000" fill="#e01d1d">5</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_17" y="166.5" x="123.5" stroke-width="0" stroke="#000" fill="#e01d1d">1</text>
+</svg>
+
+* 设S为已求得的最短路径的终点的集合
+*  下一条最短路径（设其终点为$$v_i$$）为以下之一：
+	* 中间只经过S中顶点j而后到达顶点$$v_i$$的路径
+	*  弧$$<v_0, v_i>$$  
+*  $$D[i]=Min\{<v_0,v_i> or D[j] + <v_j,  v_i>\} i \in V-S$$ 
+* 算法 
+	1. 初始化：  
+		S←｛$$v_0$$｝；  
+		D[i]←arc[0][i], i = 1,2,..., n-1;  
+		P[i] = {0, i} // 从$$v_0$$到$$v_i$$的路径  
+	2. 求出最短路径的长度：  
+		D[j]←min{D[i]}, i$$\in$$V-S; S←S$$\cup$$ {j};  
+	3. 修改：  
+		if(D[i]>D[j] + arc[j][i]) {D[i] = D[j] + arc[j][i]; P[i] = P[j]$$\cup$${i};} i$$\in$$V-S  
+		 //更新从$$v_0$$到$$v_i$$的路径
+	4. 判断：	  
+		若S = V ,则算法结束，否则转 2
+*  例子
+
+	|顶点|||||
+	|-
+	|1|5<br/>{0,1}|
+	|2|$$\infty$$|10<br/>{0,1,2}|9<br/>{0,3,2}|
+	|3|7<br/>{0,3}|7<br/>{0,3}|
+	|4|15<br/>{0,4}|15<br/>{0,4}|15<br/>{0,4}|10<br/>{0,3,2,4}|
+	|终点j|1|3|2|4|
+	|S|{0,1}|{0,1,3}|{0,1,3,2}|{0,1,3,2,4}|
+	
 
 ---
 
