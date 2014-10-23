@@ -900,8 +900,19 @@ tags : [Data structure]
 	* F : 100
 	*  则总编码长度为 (15+4+4+3+2) * 3 = 84   
 *  若按各个字符出现的概率不同而给予不等长编码，可望减少总编码长度。
-	* 各字符{O, G, _, D, F},出现概率为{15/28, 4/28, 3/28, 2/28 }, 化整为{ 15, 4, 4, 3, 2 }
-	* 如果规定，Huffman树的左子树小于右子树，则可构成下图所示Huffman树
+	* 各字符{O, G, _, D, F},出现概率为{15/28, 4/28, 3/28, 2/28 }, 化整为{ 15, 4, 4, 3, 2 }  
+	* 如果规定，Huffman树的左子树小于右子树，则可构成下图所示Huffman树  
+	*  令左孩分支为编码0, 右孩子分支为编码1  
+	*  将根结点到叶子结点路径上的分支编码，组合起来，作为该字符的Huffman码，则可得到  
+		*  O : 1
+		* _ : 011
+		* G : 010
+		* D : 001
+		* F : 000 
+	*  则总编码长度为 15*1+(2+3+4+4)*3 = 54<84
+	* Huffman是一种前缀编码，解码时不会混淆
+	* 如 GOOD 编码为 01011001 
+ 
 
  <svg width="231" height="205">
   <rect id="svg_1" height="29" width="43" y="143.5" x="173.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
@@ -944,15 +955,3 @@ tags : [Data structure]
   <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_27" y="191" x="186" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#C97A86">_</text>
 
 </svg>
-
-	*  令左孩分支为编码0, 右孩子分支为编码1
-	*  将根结点到叶子结点路径上的分支编码，组合起来，作为该字符的Huffman码，则可得到
-		*  O : 1
-		* _ : 011
-		* G : 010
-		* D : 001
-		* F : 000 
-	*  则总编码长度为 15*1+(2+3+4+4)*3 = 54<84
-	* Huffman是一种前缀编码，解码时不会混淆
-	* 如 GOOD 编码为 01011001 
- 
