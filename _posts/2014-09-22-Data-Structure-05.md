@@ -630,18 +630,8 @@ tags : [Data structure]
 *  孩子表示法[单链表]
 	* 将每个结点的孩子排列起来，用单链表表示
 	* 将每个结点排列成一个线性表  
-<svg width="411" height="223" xmlns="http://www.w3.org/2000/svg">
- <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
-
- <g>
-  <title>background</title>
-  <rect x="-1" y="-1" width="207.50317" height="113.50172" id="canvas_background" fill="#fff"/>
-  <g id="canvasGrid" display="none">
-   <rect id="svg_27" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
-  </g>
- </g>
- <g>
-  <title>Layer 1</title>
+	
+<svg width="411" height="223">
   <rect fill="#fff" stroke="#000" stroke-width="1.5" x="31.99956" y="186.49884" width="72" height="28" id="svg_1"/>
   <line fill="none" stroke="#000" stroke-width="1.5" x1="74.99956" y1="186.49884" x2="74.99956" y2="214.51669" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined"/>
   <rect fill="#fff" stroke="#000" stroke-width="1.5" x="131.99956" y="96.49884" width="72" height="28" id="svg_3"/>
@@ -709,7 +699,6 @@ tags : [Data structure]
   <text fill="#000000" stroke="#000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="9.24568" y="149.74922" id="svg_170" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">4</text>
   <text fill="#000000" stroke="#000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="10.7457" y="179.74968" id="svg_171" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">5</text>
   <text fill="#000000" stroke="#000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="11.24571" y="207.75011" id="svg_172" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">6</text>
- </g>
 </svg>
 
 * 孩子兄弟表示法
@@ -718,18 +707,8 @@ tags : [Data structure]
 	|-
 	
 	* 左边指针指向第一个孩子，右边指针指向兄弟   
-<svg width="411" height="223" xmlns="http://www.w3.org/2000/svg">
- <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
 
- <g>
-  <title>background</title>
-  <rect x="-1" y="-1" width="413.00067" height="225.00037" id="canvas_background" fill="#fff"/>
-  <g id="canvasGrid" display="none">
-   <rect id="svg_27" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
-  </g>
- </g>
- <g>
-  <title>Layer 1</title>
+<svg width="411" height="223">
   <rect fill="#fff" stroke="#000" stroke-width="1.5" x="234.99818" y="188.83216" width="87" height="28" id="svg_1"/>
   <line fill="none" stroke="#000" stroke-width="1.5" x1="297.33138" y1="188.16549" x2="297.33138" y2="216.18334" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined"/>
   <rect fill="#fff" stroke="#000" stroke-width="1.5" x="81.33256" y="53.49872" width="87" height="28" id="svg_5"/>
@@ -784,7 +763,6 @@ tags : [Data structure]
   <text stroke="#000" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_20" y="174" x="153" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">^</text>
   <text stroke="#000" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_21" y="166" x="387" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">^</text>
   <text stroke="#000" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_39" y="216" x="241" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">^</text>
- </g>
 </svg>
 
 ####  二、树与二叉树的对应关系  
@@ -924,18 +902,8 @@ tags : [Data structure]
 *  若按各个字符出现的概率不同而给予不等长编码，可望减少总编码长度。
 	* 各字符{O, G, _, D, F},出现概率为{15/28, 4/28, 3/28, 2/28 }, 化整为{ 15, 4, 4, 3, 2 }
 	* 如果规定，Huffman树的左子树小于右子树，则可构成下图所示Huffman树
- <svg width="231" height="205" xmlns="http://www.w3.org/2000/svg">
- <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
 
- <g>
-  <title>background</title>
-  <rect fill="#fff" id="canvas_background" height="207" width="233" y="-1" x="-1"/>
-  <g display="none" id="canvasGrid">
-   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" id="svg_53"/>
-  </g>
- </g>
- <g>
-  <title>Layer 1</title>
+ <svg width="231" height="205">
   <rect id="svg_1" height="29" width="43" y="143.5" x="173.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
   <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="165.5" x="188.5" stroke-width="0" stroke="#000" fill="#000000">4</text>
   <rect id="svg_3" height="29" width="43" y="143.5" x="120.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
@@ -974,7 +942,7 @@ tags : [Data structure]
   <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_25" y="195" x="76" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#C97A86">D</text>
   <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_26" y="196" x="135" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#C97A86">G</text>
   <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_27" y="191" x="186" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#C97A86">_</text>
- </g>
+
 </svg>
 
 	*  令左孩分支为编码0, 右孩子分支为编码1
