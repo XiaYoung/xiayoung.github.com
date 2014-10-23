@@ -576,10 +576,94 @@ $$\begin{bmatrix} 0 & 1 & 0 & 1 & 1 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 & 1 \\
  </g>
 </svg>
 
+
+* 6）性质
+	* 对于有向图的邻接表，其第i个链表中结点的个数只是该顶点的出度；如果要计算入度，必须遍历整个链接表[也可以建立一个逆邻接表]
+	* 要判定两个顶点i和j是否有边(或弧)，必须搜索整个第i个和第j个链表，不及邻接矩阵方便
+* 7）有向图的逆邻接表
+	* 逆邻接表中，弧的箭头向内（入弧）   
+<svg width="261" height="161" >
+ <g>
+  <rect id="svg_1" height="149.33325" width="79" y="7.83334" x="12.16666" stroke-width="1.5" fill="#fff" stroke="#000"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="157.04632" x2="60.49999" y1="9.16668" x1="60.49999" stroke-width="1.5" fill="none" stroke="#000"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_8" y2="38.99997" x2="91.40914" y1="38.99997" x1="12.99994" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_29" y2="68.99997" x2="91.40914" y1="68.99997" x1="12.99994" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_33" y2="98.99997" x2="91.40914" y1="98.99997" x1="12.99994" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_34" y2="128.99997" x2="91.40914" y1="128.99997" x1="12.99994" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <rect id="svg_37" height="23.33334" width="50.00001" y="42.23213" x="121.84967" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_38" y2="65.57499" x2="151.84968" y1="42.23213" x1="151.84968" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <rect id="svg_69" height="23.33334" width="50.00001" y="102.91346" x="121.84967" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_39" y="123.56546" x="130.68301" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">0</text>
+  <rect id="svg_40" height="23.33334" width="50.00001" y="74.73213" x="205.06042" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_41" y2="98.07499" x2="235.06042" y1="74.73213" x1="235.06042" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <rect id="svg_43" height="23.33334" width="50.00001" y="135.23212" x="205.56044" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_44" y2="158.57498" x2="235.56045" y1="135.23212" x1="235.56045" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_46" y2="158.57498" x2="235.56045" y1="135.23212" x1="235.56045" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <rect id="svg_53" height="23.33334" width="50.00001" y="72.23954" x="121.84967" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_54" y2="95.5824" x2="151.84968" y1="72.23954" x1="151.84968" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_70" y2="126.25632" x2="151.84968" y1="102.91346" x1="151.84968" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <rect id="svg_85" height="23.33334" width="50.00001" y="133.42329" x="121.84967" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_86" y2="156.76615" x2="151.84968" y1="133.42329" x1="151.84968" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_134" y="61.00738" x="31.66489" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">1</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_144" y="30.99996" x="31.66489" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">0</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_148" y="94.25663" x="215.16489" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">3</text>
+  <g id="svg_237">
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_234" y2="85.3988" x2="203.02956" y1="85.3988" x1="162.16664" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_235" y2="80.73213" x2="196.16665" y1="85.3988" x1="203.49998" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_236" y2="90.06546" x2="197.49998" y1="86.06546" x1="202.16665" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  </g>
+  <g id="svg_261">
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_258" y2="52.8988" x2="120.52956" y1="52.8988" x1="79.66664" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_259" y2="48.23213" x2="113.66665" y1="52.8988" x1="120.99998" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_260" y2="57.56546" x2="114.99998" y1="53.56546" x1="119.66665" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  </g>
+  <g id="svg_265">
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_262" y2="82.8988" x2="120.52956" y1="82.8988" x1="79.66664" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_263" y2="78.23213" x2="113.66665" y1="82.8988" x1="120.99998" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_264" y2="87.56546" x2="114.99998" y1="83.56546" x1="119.66665" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  </g>
+  <g id="svg_269">
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_266" y2="112.8988" x2="120.52956" y1="112.8988" x1="79.66664" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_267" y2="108.23213" x2="113.66665" y1="112.8988" x1="120.99998" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_268" y2="117.56546" x2="114.99998" y1="113.56546" x1="119.66665" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  </g>
+  <g id="svg_273">
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_270" y2="144.8988" x2="120.52956" y1="144.8988" x1="79.66664" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_271" y2="140.23213" x2="113.66665" y1="144.8988" x1="120.99998" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_272" y2="149.56546" x2="114.99998" y1="145.56546" x1="119.66665" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  </g>
+  <g id="svg_285">
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_282" y2="145.89879" x2="203.11968" y1="145.89879" x1="162.25676" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_283" y2="141.23212" x2="196.25677" y1="145.89879" x1="203.5901" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_284" y2="150.56545" x2="197.5901" y1="146.56545" x1="202.25677" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  </g>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_4" y="159.89879" x="240.89378" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">^</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_5" y="35.83331" x="69.89377" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">^</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_6" y="127.8988" x="156.89377" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">^</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_9" y="156.18129" x="213.66487" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">2</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_10" y="153.70127" x="31.66489" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">4</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_11" y="92.24679" x="130.16489" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">1</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_12" y="122.19113" x="31.66489" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">3</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_13" y="65.8988" x="156.39377" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">^</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_48" y="153.56545" x="131.18301" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">0</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_49" y="62.56546" x="131.68301" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">0</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_50" y="91.68129" x="31.66489" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">2</text>
+ </g>
+</svg>
+
 ####  三、十字链表（Orthogonal List）  
+
+*  1）定义
+	* 十字链表是有向图的另一种存储结构
+	* 十字链表是将有向图的邻接表和逆邻接表结合起来的一种存储结构 
 
 ####  四、邻接多重表（Adjacency Multilist）  
 
+* 1）定义
+	* 邻接多重表是无向图的另一种存储结构
+	* 在无向图邻接表中，一条边要用2个结点表示（分别从2个顶点的角度看）
+	* 在邻接多重表中，一条边只用一个结点表示
+	* 将所有具有某顶点的结点，全部用链连结起来，链所在的域为该顶点对应的指针域
 
 ---
 
@@ -587,9 +671,36 @@ $$\begin{bmatrix} 0 & 1 & 0 & 1 & 1 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 & 1 \\
 
 ####  一、图的遍历  
 
+*  从图的某一顶点开始，访遍图中其余顶点，且使每个顶点仅被访问一次
+*  图的遍历主要应用于无向图
+
 ####  二、深度优先搜索（DFS） 
 
+* 1）定义
+	*  图的深度优先搜索是树的先根遍历的推广
+	*  图中可能存在回路，且图的任一顶点都可能与其它顶点相通，在访问完某个顶点之后可能会沿着某些边又回到了曾经访问过的顶点
+	*  DFS是一个递归过程（DFS需要用到栈）
+	*  为了避免重复访问，可设置一个标志顶点是否被访问过的辅助数组 visited[ ]
+* 2）算法
+	* 所有顶点访问标志visited[ ]设置为FALSE
+	* 从某顶点v0开始，设 v= v0
+		1. 如果visited[v] == FALSE,则访问该顶点v,并将顶点v压入栈中，且设visited[v] = TRUE
+		2. 如果找到当前顶点的一个新的相邻顶点 w（即visited[w] == FALSE）,设v = w，重复1
+		3. 否则（说明当前顶点的所有相邻顶点都已被访问过，或者当前顶点没有相邻顶点），如果当前顶点是v0，退出；否则返回上一级顶点（即从栈中弹出一个顶点），重复2
+
 ####  三、广度优先搜索（BFS）
+
+* 1）定义
+	*  广度优先搜索（BFS）是一种分层搜索方法
+	* BFS每向前走一步可能访问一批顶点，不存在往回退的情况
+	* BFS不是一个递归的过程
+	* BFS需要用到队列
+* 2）算法
+	* 所有顶点访问标志visited[ ]设置为FALSE
+	* 从某顶点v0开始，访问v0，visited[v0]=TRUE，将v0插入队列Q
+		1. 如果对立Q不空，则从队列Q头上取出一个顶点v，否则结束
+		2. 依次找到顶点v的所有相邻顶点v'，如果visited[v'] == FALSE，则访问该顶点v',然后将 v'插入队列Q，并使visted[v'] = TRUE,
+		3. 重复1，2
 
 ---
 
