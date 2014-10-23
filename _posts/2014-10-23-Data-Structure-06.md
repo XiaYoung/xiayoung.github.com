@@ -199,7 +199,7 @@ tags : [Data structure]
 	*  无向图（图见第一节的二）的邻接矩阵  
 	$$\begin{bmatrix} 0 & 1 & 0 & 0 & 1 & 1 \\ 1 & 0 & 1 & 1 & 0 & 1 \\ 0 & 1 & 0 & 1 & 0 & 0 \\ 0 & 1 & 1 & 0 & 1 & 1 \\ 1 & 0 & 0 & 1 & 0 & 1 \\ 1 & 1 & 0 & 1 & 1 & 0 \end{bmatrix}$$  
 
-	* 有向图（第一节的三）的邻接矩阵
+	* 有向图（第一节的三）的邻接矩阵  
 $$\begin{bmatrix} 0 & 1 & 0 & 1 & 1 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix}$$  
 
 *  2）性质
@@ -210,8 +210,8 @@ $$\begin{bmatrix} 0 & 1 & 0 & 1 & 1 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 & 1 \\
 *  3) 网络
 	* 在网络中，两个顶点如果不邻接，则被视为距离无穷大；如果邻接，则两顶点之间存在一个距离值（即权值）
 	*  $$A[i][j] = \begin{cases}  w_{i, j} 如果(i, j) \in E 或 <i, j> \in E\\\infty   其它\end{cases}$$  
-	*  例子，有向网 N= {V, E} V={0, 1, 2, 3, 4}, E = {<0,1,5>, <0,3,7>, <0,4,15>, <1,2,5>, <2,4,1>, <3,2,2>}, E中每个元组的第三个元素表示权。
-	* $$\begin{bmatrix} \infty  & 5 & \infty  & 7 & 15 \\ \infty  & \infty  & 5 & \infty  & \infty  \\ \infty  & \infty  & \infty  & \infty  & 1 \\ \infty  & \infty  & 2 & \infty  & \infty  \\ \infty  & \infty  & \infty  & \infty  & \infty  \end{bmatrix}$$   
+	*  例子，有向网 N= {V, E} V={0, 1, 2, 3, 4}, E = {<0,1,5>, <0,3,7>, <0,4,15>, <1,2,5>, <2,4,1>, <3,2,2>}, E中每个元组的第三个元素表示权。  
+	$$\begin{bmatrix} \infty  & 5 & \infty  & 7 & 15 \\ \infty  & \infty  & 5 & \infty  & \infty  \\ \infty  & \infty  & \infty  & \infty  & 1 \\ \infty  & \infty  & 2 & \infty  & \infty  \\ \infty  & \infty  & \infty  & \infty  & \infty  \end{bmatrix}$$   
 
 ####  二、邻接表（Adjacency List）  
 
