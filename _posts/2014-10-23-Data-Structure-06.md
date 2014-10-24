@@ -846,7 +846,7 @@ $$\begin{bmatrix} 0 & 1 & 0 & 1 & 1 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 & 1 \\
 	*  若集合X上的关系R是：
 		* (1). 自反的：$$xRx$$   
 		* (2). 反对称的：$$xRy \Rightarrow  yRx$$  
-		* (3). 传递的：$$xRy & yRz \Rightarrow  xRz$$ 
+		* (3). 传递的：$$xRy \& yRz \Rightarrow  xRz$$ 
 	* 则称R是集合X上的偏序关系 
 2.  全序  
 	*  设关系R是集合X上的偏序，如果对每个$$x,y \in X$$, 必有xRy或者yRX, 则称R是X上的全序关系
