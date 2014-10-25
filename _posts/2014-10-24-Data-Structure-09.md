@@ -124,7 +124,6 @@ tags : [Data structure]
   <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_72" y="81.16591" x="314.83443" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">↑</text>
   <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_73" y="81.16591" x="344.83443" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">↑</text>
 </svg>  
-  
 	比较次数  
 	查找第n个元素：1  
 	查找第n-1个元素：2
@@ -135,10 +134,21 @@ tags : [Data structure]
 
 * 5）算法性能分析
 
-*  
+	*  对顺序表而言，$$C_i = n-i+1$$  
+	*  在等概率查找的情况下，$$P_i = 1/n$$  
+	*  $$ASL =n*p_1 +(n-1)P_2+...+ 2P_{n-1} +P_n = (n+1)/2$$      
 
 * 6）不等概率
+	* 如果被查找的记录概率不等时，取
+	$$P_n\ge  P_{n-1}\ge ...\ge P_2\ge P_1$$  
+	* 若查找概率无法事先测定，则查找过程采取的改进办法是，在每次查找之后，将刚刚查找到的记录直接移至表尾的位置上
 * 7）特点
+	* 优点
+		* 简单
+		* 适应面广（对表的结构无任何要求）
+	* 缺点 
+		* 平均查找长度较大
+		* 特别是当n很大时，查找效率很低 
 
 ####  二、折半查找  
 
