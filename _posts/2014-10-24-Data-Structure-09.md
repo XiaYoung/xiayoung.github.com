@@ -71,7 +71,8 @@ tags : [Data structure]
 			return i;
 		}// Search_Seq
 	设置”哨兵“的目的是省略对下标越界的检查，提高算法执行速度
-* 4）举例
+* 4）举例  
+
 <svg width="372" height="109" >
   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="60.83437" x2="4.16784" y1="27.83437" x1="4.16784" stroke-width="1.5" stroke="#000" fill="none"/>
   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="60.83437" x2="34.16784" y1="27.83437" x1="34.16784" stroke-width="1.5" stroke="#000" fill="none"/>
@@ -124,7 +125,7 @@ tags : [Data structure]
   <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_73" y="81.16591" x="344.83443" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">↑</text>
 </svg>  
   
-比较次数  
+	比较次数  
 	查找第n个元素：1  
 	查找第n-1个元素：2
 	......  
