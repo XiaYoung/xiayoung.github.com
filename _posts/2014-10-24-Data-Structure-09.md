@@ -1838,7 +1838,7 @@ tags : [Data structure]
 	H(key) = a*key + b  
 	其中a和b为常数  
 	*  例子 
-	H(key) = key - 2009150000  
+	H(key) = key - 2009150000    
 	
 	|004|2009150004|麦伟杰|男|计算机学院 02
 	|-
@@ -1847,7 +1847,8 @@ tags : [Data structure]
 	|011|2009150011|冯文松|男|计算机学院 02
 	|014|2009150014|赵慧敏|女|计算机学院 02
 	|020|2009150020|冯冠翔|男|计算机学院 02
-	|024|2009150024|张芙铭|男|计算机学院 03
+	|024|2009150024|张芙铭|男|计算机学院 03  
+
 	* 特性
 		* 直接定址法仅适合于地址集合的大小与关键字集合的大小相等的情况
 		* 当a=1时，H(key) = key，即用关键字做地址
@@ -1871,7 +1872,8 @@ tags : [Data structure]
 		|2|0|0|8|1|6|0|1|2|5|梁振杰
 		|2|0|0|8|1|3|0|3|9|3|陈曦
 		|2|0|0|9|1|5|0|0|0|4|麦俊杰
-		|2|0|0|9|1|5|0|0|0|5|张喆
+		|2|0|0|9|1|5|0|0|0|5|张喆  
+		
 		 *  分析：
 			 * 1列只取2
 			 * 23列只取0
@@ -1986,7 +1988,7 @@ $$\frac { \begin{matrix}  & 5 & 8 & 6 & 4 \\  & 4 & 2 & 2 & 0 \\  &  &  & 0 & 4 
 	* [表后插入]  查找不成功，再插入新结点时，用表后插入方式较好
 	* [表头插入]  给定关键字集合，逐步生成哈希表时，用表头插入方法较好
 	
-	<svg width="580" height="400" >
+  <svg width="580" height="400" >
   <line fill="none" stroke="#000" stroke-width="1.5" x1="63.2647" y1="39.2647" x2="111.63825" y2="39.2647" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined"/>
   <line fill="none" stroke="#000" stroke-width="1.5" x1="63.2647" y1="69.2647" x2="111.63825" y2="69.2647" id="svg_5" stroke-linejoin="undefined" stroke-linecap="undefined"/>
   <line fill="none" stroke="#000" stroke-width="1.5" x1="63.2647" y1="99.2647" x2="111.63825" y2="99.2647" id="svg_6" stroke-linejoin="undefined" stroke-linecap="undefined"/>
@@ -2131,7 +2133,7 @@ $$\frac { \begin{matrix}  & 5 & 8 & 6 & 4 \\  & 4 & 2 & 2 & 0 \\  &  &  & 0 & 4 
   <text fill="#000000" stroke="#000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="409.05968" y="59.11772" id="svg_244" font-size="14" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">11</text>
   <text fill="#000000" stroke="#000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="409.64792" y="90.29419" id="svg_245" font-size="14" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">23</text>
   <text fill="#000000" stroke="#000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="410.23616" y="150.29419" id="svg_246" font-size="14" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">36</text>
-</svg>
+</svg>  
 
 
 ####  四、哈希表的实现
@@ -2158,7 +2160,7 @@ $$\frac { \begin{matrix}  & 5 & 8 & 6 & 4 \\  & 4 & 2 & 2 & 0 \\  &  &  & 0 & 4 
 	*  对于给定值key，计算哈希地址 p=hash(Key)
 	*  若HashTab[p].next= NULL，则查找不成功
 	*  若HashTab[p].next.data = key, 则查找成功
-	* 否则“求下一地址”，再进行比较
+	* 否则“求下一地址”，再进行比较  
 
 ```flow
 st=>start: Start
@@ -2176,7 +2178,7 @@ cond1(no)->op3
 cond2(yes)->op5
 cond2(no)->op4
 op5->cond1
-``` 
+```   
 
 * 4）查找函数 search()
 	*   若找到key，返回其结点指针；否则将其插入表中再返回其结点指针[链地址法解决冲突，表头插入]
