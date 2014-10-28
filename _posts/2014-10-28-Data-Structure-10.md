@@ -638,3 +638,174 @@ tags : [Data structure]
   <ellipse fill="#007f3f" stroke="#000000" stroke-width="1.5" cx="222.52626" cy="657.64214" id="svg_135" rx="22" ry="22"/>
   <text fill="#000000" stroke="#000" stroke-width="0" x="210.52626" y="665.64214" id="svg_136" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">21</text>
 </svg>
+
+
+* 4）性能分析
+
+	*  快速排序是一个递归过程，其递归树如图所示
+
+	<svg width="303" height="190" >
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_4" y2="142.5" x2="256" y1="41.5" x1="112" stroke-width="1.5" stroke="#000" fill="none"/>
+  <ellipse ry="22" rx="22" id="svg_1" cy="27.64214" cx="92.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="35.64214" x="80.52626" stroke-width="0" stroke="#000" fill="#000000">21</text>
+  <ellipse ry="22" rx="22" id="svg_5" cy="67.64214" cx="152.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_6" y="75.64214" x="140.52626" stroke-width="0" stroke="#000" fill="#000000">25</text>
+  <ellipse ry="22" rx="22" id="svg_7" cy="157.64214" cx="272.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_8" y="165.64214" x="259.52626" stroke-width="0" stroke="#000" fill="#000000">49</text>
+  <ellipse ry="22" rx="22" id="svg_9" cy="107.64214" cx="212.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_10" y="115.64214" x="197.52626" stroke-width="0" stroke="#000" fill="#000000">25*</text>
+  <ellipse ry="22" rx="22" id="svg_11" cy="107.64214" cx="82.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_12" y="115.64214" x="70.52626" stroke-width="0" stroke="#000" fill="#000000">16</text>
+  <ellipse ry="22" rx="22" id="svg_13" cy="67.64214" cx="32.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_14" y="75.64214" x="20.52626" stroke-width="0" stroke="#000" fill="#000000">08</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_15" y2="54.5" x2="53" y1="39.5" x1="74" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_16" y2="80.5" x2="50" y1="97.5" x1="67" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+	</svg>
+
+	*  利用序列第一个记录作为基准，将整个序列划分为左右两个子序列。只要是关键字小于基准记录关键字的记录都移到序列左侧
+	* 快速排序的趟数取决于递归树的高度。
+	* 如果每次划分对一个记录定位后，该记录的左侧子序列与右侧子序列的长度相同，则下一步将是对两个长度减半的子序列进行排序，这是最理想的情况。
+		* 在n个元素的序列中，对一个记录定位所需时间为O(n)。若设t(n)是对n个元素的序列进行排序所需的时间，而且每次对一个记录正确定位后，正好把序列划分为长度相等的两个子序列，此时，总的计算时间为：
+	$$T(n)\le cn + 2T(n/2)$$  
+	$$T(n)\le cn + 2(cn/2 + 2T(n/4)) = 2cn + 4T(n/4)$$  
+	$$T(n)\le 2cn + 4(cn/4 + 2T(n/8)) = 3cn + 8T(n/8)$$   
+	$$......$$  
+	$$T(n)\le cn \log_2n + nT(1)) = O(n \log_2n)$$    
+
+		*  可以证明，快速排序的平均计算时间也是$$O(nlog_2n)$$
+		*  实验结果表明：就平均计算时间而言，快速排序是所有内排序方法中最好的一个。
+		*  但快速排序是一种不稳定的排序方法 
+	*  在最坏情况下，即待排序记录序列已经按其关键字从小到大排好序，其递归树成为单支树。
+		* 每次划分只得到一个比上一次少一个记录的子序列
+		* 必须经过n-1趟才能把所有记录定位
+		* 而且第i趟需要经过n-i次关键字比较才能找到第i个记录的安放位置，总的关键字比较次数将达到
+	$$\sum_{i=1}^{n-1}{n-i}=\frac{1}{2}n(n-1) \approx \frac{n^2}{2}$$   
+* 5 )改进 	
+	* 枢轴记录取low、high、(low+high)/2 三者指向记录关键字居中的记录  
+
+---
+
+### **第四节 选择排序**
+
+####  一、简单选择排序   
+
+*  每一趟（例如第i趟，i=1, 2, ..., n-1）在后面n-i+1个待排序记录中通过n-i次比较，选出关键字最小的记录，与第i个记录交换
+*  例子
+	<svg width="580" height="469" >
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="122.52626" cy="67.64214" id="svg_1" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="110.52626" y="75.64214" id="svg_2" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">21</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="182.52626" cy="67.64214" id="svg_5" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="170.52626" y="75.64214" id="svg_6" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="242.52626" cy="67.64214" id="svg_7" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="229.52626" y="75.64214" id="svg_8" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">49</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="302.52626" cy="67.64214" id="svg_9" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="287.52626" y="75.64214" id="svg_10" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25*</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="362.52626" cy="67.64214" id="svg_11" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="350.52626" y="75.64214" id="svg_12" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">16</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="422.52626" cy="67.64214" id="svg_13" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="410.52626" y="75.64214" id="svg_14" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">08</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="110.52626" y="35.64214" id="svg_15" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">0</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="170.52626" y="35.64214" id="svg_16" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">1</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="230.52626" y="35.64214" id="svg_17" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">2</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="290.52626" y="35.64214" id="svg_18" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">3</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="350.52626" y="35.64214" id="svg_19" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">4</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="410.52626" y="35.64214" id="svg_20" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">5</text>
+  <text stroke="#000" fill="#000000" stroke-width="0" stroke-opacity="null" x="37.5" y="148.5" id="svg_39" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">i=1</text>
+  <ellipse fill="#ffff00" stroke="#000" stroke-width="1.5" cx="122.52626" cy="137.64214" id="svg_4" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="110.52626" y="145.64214" id="svg_21" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">21</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="182.52626" cy="137.64214" id="svg_22" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="170.52626" y="145.64214" id="svg_23" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="242.52626" cy="137.64214" id="svg_24" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="229.52626" y="145.64214" id="svg_25" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">49</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="302.52626" cy="137.64214" id="svg_26" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="287.52626" y="145.64214" id="svg_27" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25*</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="362.52626" cy="137.64214" id="svg_28" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="350.52626" y="145.64214" id="svg_29" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">16</text>
+  <ellipse fill="#005fbf" stroke="#000" stroke-width="1.5" cx="422.52626" cy="137.64214" id="svg_30" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="410.52626" y="145.64214" id="svg_31" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">08</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="422.52626" cy="197.64214" id="svg_32" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="410.52626" y="205.64214" id="svg_33" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">21</text>
+  <ellipse fill="#ffff00" stroke="#000" stroke-width="1.5" cx="182.52626" cy="197.64214" id="svg_34" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="170.52626" y="205.64214" id="svg_35" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="242.52626" cy="197.64214" id="svg_36" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="229.52626" y="205.64214" id="svg_37" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">49</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="302.52626" cy="197.64214" id="svg_38" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="287.52626" y="205.64214" id="svg_40" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25*</text>
+  <ellipse fill="#005fbf" stroke="#000" stroke-width="1.5" cx="362.52626" cy="197.64214" id="svg_41" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="350.52626" y="205.64214" id="svg_42" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">16</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="122.52626" cy="197.64214" id="svg_43" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="110.52626" y="205.64214" id="svg_44" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">08</text>
+  <ellipse fill="#005fbf" stroke="#000" stroke-width="1.5" cx="422.52626" cy="257.64214" id="svg_45" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="410.52626" y="265.64214" id="svg_46" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">21</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="362.52626" cy="257.64214" id="svg_47" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="350.52626" y="265.64214" id="svg_48" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25</text>
+  <ellipse fill="#ffff00" stroke="#000" stroke-width="1.5" cx="242.52626" cy="257.64214" id="svg_49" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="229.52626" y="265.64214" id="svg_50" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">49</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="302.52626" cy="257.64214" id="svg_51" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="287.52626" y="265.64214" id="svg_52" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25*</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="182.52626" cy="257.64214" id="svg_53" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="170.52626" y="265.64214" id="svg_54" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">16</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="122.52626" cy="257.64214" id="svg_55" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="110.52626" y="265.64214" id="svg_56" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">08</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="242.52626" cy="317.64214" id="svg_57" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="230.52626" y="325.64214" id="svg_58" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">21</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="362.52626" cy="317.64214" id="svg_59" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="350.52626" y="325.64214" id="svg_60" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="422.52626" cy="317.64214" id="svg_61" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="409.52626" y="325.64214" id="svg_62" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">49</text>
+  <ellipse fill="#005fbf" stroke="#000" stroke-width="1.5" cx="302.52626" cy="317.64214" id="svg_63" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="287.52626" y="325.64214" id="svg_65" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25*</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="182.52626" cy="317.64214" id="svg_66" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="170.52626" y="325.64214" id="svg_67" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">16</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="122.52626" cy="317.64214" id="svg_68" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="110.52626" y="325.64214" id="svg_69" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">08</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="242.52626" cy="377.64214" id="svg_70" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="230.52626" y="385.64214" id="svg_71" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">21</text>
+  <ellipse fill="#005fbf" stroke="#000" stroke-width="1.5" cx="362.52626" cy="377.64214" id="svg_72" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="350.52626" y="385.64214" id="svg_73" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="422.52626" cy="377.64214" id="svg_74" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="409.52626" y="385.64214" id="svg_75" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">49</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="302.52626" cy="377.64214" id="svg_76" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="287.52626" y="385.64214" id="svg_77" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25*</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="182.52626" cy="377.64214" id="svg_78" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="170.52626" y="385.64214" id="svg_79" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">16</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="122.52626" cy="377.64214" id="svg_80" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="110.52626" y="385.64214" id="svg_81" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">08</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="242.52626" cy="437.64214" id="svg_82" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="230.52626" y="445.64214" id="svg_83" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">21</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="362.52626" cy="437.64214" id="svg_84" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="350.52626" y="445.64214" id="svg_85" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="422.52626" cy="437.64214" id="svg_86" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="409.52626" y="445.64214" id="svg_87" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">49</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="302.52626" cy="437.64214" id="svg_88" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="287.52626" y="445.64214" id="svg_89" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25*</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="182.52626" cy="437.64214" id="svg_90" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="170.52626" y="445.64214" id="svg_91" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">16</text>
+  <ellipse fill="#007f00" stroke="#000" stroke-width="1.5" cx="122.52626" cy="437.64214" id="svg_92" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="110.52626" y="445.64214" id="svg_93" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">08</text>
+  <text style="cursor: move;" stroke="#000" fill="#000000" stroke-width="0" stroke-opacity="null" x="37.5" y="208.5" id="svg_94" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">i=2</text>
+  <text style="cursor: move;" stroke="#000" fill="#000000" stroke-width="0" stroke-opacity="null" x="37.5" y="268.5" id="svg_95" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">i=3</text>
+  <text style="cursor: move;" stroke="#000" fill="#000000" stroke-width="0" stroke-opacity="null" x="37.5" y="328.5" id="svg_96" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">i=4</text>
+  <text style="cursor: move;" stroke="#000" fill="#000000" stroke-width="0" stroke-opacity="null" x="37.5" y="388.5" id="svg_97" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">i=5</text>
+  <text stroke="#000" fill="#000000" stroke-width="0" stroke-opacity="null" x="37.5" y="448.5" id="svg_98" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">i=6</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_99" y="132" x="477.5" stroke-width="0" stroke="#000" fill="#000000">min = 08</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_100" y="147" x="475.5" stroke-width="0" stroke="#000" fill="#000000">swap 21 08</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_101" y="182" x="477.5" stroke-width="0" stroke="#000" fill="#000000">min =16</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_102" y="197" x="475.5" stroke-width="0" stroke="#000" fill="#000000">swap 25 16</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_103" y="242" x="477.5" stroke-width="0" stroke="#000" fill="#000000">min = 21</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_104" y="257" x="475.5" stroke-width="0" stroke="#000" fill="#000000">swap 49 21</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_105" y="312" x="477.5" stroke-width="0" stroke="#000" fill="#000000">min =25*</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_106" y="327" x="475.5" stroke-width="0" stroke="#000" fill="#000000">no swap</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_107" y="372" x="477.5" stroke-width="0" stroke="#000" fill="#000000">min = 25</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_108" y="387" x="475.5" stroke-width="0" stroke="#000" fill="#000000">no swap</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_109" y="442" x="477.5" stroke-width="0" stroke="#000" fill="#000000">finish</text>
+	</svg>
+
+*  性能分析 
+	* 直接选择排序的关键字比较次数KCN与记录的初始排列无关
+	* 设整个待排序记录序列有n个记录，则第i趟选择最小关键字记录所需的比较次数总是n-i次。总的关键字比较次数为：  
+	$$KCN = \sum_{i=1}^{n-1}{(n-i)} = n(n-1)/2$$  
+	*  记录的移动次数与记录序列的初始排列有关。当这组记录的初始状态是按其关键字从下到大有序的时候。记录的移动次数RMN=0，达到最少  
+	*  最坏情况是每一趟都要进行交换，总的记录移动次数为RMN =3(n-1)  
+	*  直接选择排序时间复杂度为O(n^2)  
+	*  直接选择排序是一种不稳定的排序方法  
