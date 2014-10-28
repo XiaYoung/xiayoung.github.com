@@ -1987,8 +1987,8 @@ $$\frac { \begin{matrix}  & 5 & 8 & 6 & 4 \\  & 4 & 2 & 2 & 0 \\  &  &  & 0 & 4 
 	* 将所有哈希地址相同的记录都链接在同一链表中
 	* [表后插入]  查找不成功，再插入新结点时，用表后插入方式较好
 	* [表头插入]  给定关键字集合，逐步生成哈希表时，用表头插入方法较好
-	
-  <svg width="580" height="400" >
+			
+		<svg width="580" height="400" >
   <line fill="none" stroke="#000" stroke-width="1.5" x1="63.2647" y1="39.2647" x2="111.63825" y2="39.2647" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined"/>
   <line fill="none" stroke="#000" stroke-width="1.5" x1="63.2647" y1="69.2647" x2="111.63825" y2="69.2647" id="svg_5" stroke-linejoin="undefined" stroke-linecap="undefined"/>
   <line fill="none" stroke="#000" stroke-width="1.5" x1="63.2647" y1="99.2647" x2="111.63825" y2="99.2647" id="svg_6" stroke-linejoin="undefined" stroke-linecap="undefined"/>
@@ -2133,8 +2133,7 @@ $$\frac { \begin{matrix}  & 5 & 8 & 6 & 4 \\  & 4 & 2 & 2 & 0 \\  &  &  & 0 & 4 
   <text fill="#000000" stroke="#000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="409.05968" y="59.11772" id="svg_244" font-size="14" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">11</text>
   <text fill="#000000" stroke="#000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="409.64792" y="90.29419" id="svg_245" font-size="14" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">23</text>
   <text fill="#000000" stroke="#000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="410.23616" y="150.29419" id="svg_246" font-size="14" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">36</text>
-</svg>  
-
+		</svg>  
 
 ####  四、哈希表的实现
 
