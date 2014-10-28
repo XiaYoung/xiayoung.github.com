@@ -2161,7 +2161,7 @@ $$\frac { \begin{matrix}  & 5 & 8 & 6 & 4 \\  & 4 & 2 & 2 & 0 \\  &  &  & 0 & 4 
 	*  若HashTab[p].next.data = key, 则查找成功
 	* 否则“求下一地址”，再进行比较  
 
-flow
+```flow
 st=>start: Start
 op1=>operation: 给定k值
 op2=>operation: 计算hash(key)    
@@ -2177,6 +2177,7 @@ cond1(no)->op3
 cond2(yes)->op5
 cond2(no)->op4
 op5->cond1
+```
 
 * 4）查找函数 search()
 	*   若找到key，返回其结点指针；否则将其插入表中再返回其结点指针[链地址法解决冲突，表头插入]
