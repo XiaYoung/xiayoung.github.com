@@ -1441,8 +1441,16 @@ tags : [Data structure]
   <text fill="#000000" stroke="#000" stroke-width="0" stroke-opacity="null" x="67.69757" y="1568.40883" id="svg_559" font-size="14" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">重新调整为最大堆</text>
 </svg>
 
-
 * 7) 性能分析
+	* 对于长度为n的序列，其对应的完全二叉树的深度为$$k(2^{k-1}\le n\le2^k)(即：k = log_2n)$$  
+	* 对深度为k的堆，筛选算法中进行的关键比较次数至多为2(k-1)次
+	* 堆排序时间主要耗费在建初始堆和调整建新堆（筛选）上
+	* 建初始堆最多做n/2次筛选
+	* 对长度为n的序列，排序最多需要做n-1次调整建新堆（筛选）。建初始堆时，需要n/2次筛选
+	* 因此共需要O(n*k)量级的时间
+	* $$k = log_2n$$
+	* 堆排序时间复杂度为$$O(n\log_2n)$$  
+	* 堆排序是一种不稳定的排序方法 
 
 ---
 
@@ -1450,9 +1458,94 @@ tags : [Data structure]
 
 ####  一、归并   
 
+*  归并是将两个或两个以上的有序表合并成一个新的有序表的操作过程。
+
 ####  二、两路归并  
  
+	typedef int SortData;
+	void merge(SortData InitList[], SortData mergedList[], int  left,int mid, int right){
+		int i = left,j=mid+1,k=left;
+		while(i<=mid && j<= right)  //两两比较将较小的并入
+			if(InitList[i] <= InitList[j]){megedList[k] = InitList[i];i++;k++;}
+			else {mergedList[k] =InitList[j];j++;k++;}
+		while(i<=mid){mergedList[k] = InitList[i];i++;k++;}//将mid前剩余的并入
+		while(j<=mid){mergedList[k] = InitList[j];j++;k++;}//将mid后剩余的并入
+	}
+
+*  性能分析
+	* 假设待归并的两个有序表长度分别为m和L，则两路归并后，新的有序表长度为m+L
+	* 两路归并操作至多只需要m+L次移位和m+L次比较
+	* 因此两路归并的时间复杂度为O(m+L)
+
 ####  三、2路——归并排序  
+
+*  将n个记录堪称是n个有序序列
+* 将前后相邻的两个有序序列归并为一个有序序列（两路归并）
+* 重复做两路归并操作，直到只有一个有序序列为止
+* 例子
+
+<svg width="383" height="282" >
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="42.52626" cy="67.64214" id="svg_1" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="30.52626" y="75.64214" id="svg_2" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">21</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="102.52626" cy="67.64214" id="svg_5" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="90.52626" y="75.64214" id="svg_6" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="162.52626" cy="67.64214" id="svg_7" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="149.52626" y="75.64214" id="svg_8" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">49</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="222.52626" cy="67.64214" id="svg_9" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="207.52626" y="75.64214" id="svg_10" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25*</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="282.52626" cy="67.64214" id="svg_11" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="270.52626" y="75.64214" id="svg_12" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">16</text>
+  <ellipse fill="#fff" stroke="#000" stroke-width="1.5" cx="342.52626" cy="67.64214" id="svg_13" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="330.52626" y="75.64214" id="svg_14" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">08</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="30.52626" y="35.64214" id="svg_15" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">0</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="90.52626" y="35.64214" id="svg_16" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">1</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="150.52626" y="35.64214" id="svg_17" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">2</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="210.52626" y="35.64214" id="svg_18" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">3</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="270.52626" y="35.64214" id="svg_19" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">4</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="330.52626" y="35.64214" id="svg_20" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">5</text>
+  <ellipse fill="#ff0000" stroke="#000" stroke-width="1.5" cx="42.52626" cy="127.64214" id="svg_32" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="30.52626" y="135.64214" id="svg_33" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">21</text>
+  <ellipse fill="#ff0000" stroke="#000" stroke-width="1.5" cx="102.52626" cy="127.64214" id="svg_34" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="90.52626" y="135.64214" id="svg_35" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25</text>
+  <ellipse fill="#7fff00" stroke="#000" stroke-width="1.5" cx="162.52626" cy="127.64214" id="svg_36" rx="22" ry="22"/>
+  <ellipse fill="#7fff00" stroke="#000" stroke-width="1.5" cx="222.52626" cy="127.64214" id="svg_38" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="147.52626" y="135.64214" id="svg_40" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25*</text>
+  <ellipse fill="#007fff" stroke="#000" stroke-width="1.5" cx="282.52626" cy="127.64214" id="svg_41" rx="22" ry="22"/>
+  <ellipse fill="#007fff" stroke="#000" stroke-width="1.5" cx="342.52626" cy="127.64214" id="svg_43" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="270.52626" y="135.64214" id="svg_44" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">08</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="209.52626" y="135.64214" id="svg_37" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">49</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="330.52626" y="135.64214" id="svg_42" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">16</text>
+  <ellipse fill="#ff0000" stroke="#000" stroke-width="1.5" cx="42.52626" cy="187.64214" id="svg_45" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="30.52626" y="195.64214" id="svg_46" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">21</text>
+  <ellipse fill="#ff0000" stroke="#000" stroke-width="1.5" cx="102.52626" cy="187.64214" id="svg_47" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="90.52626" y="195.64214" id="svg_48" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25</text>
+  <ellipse fill="#ff0000" stroke="#000" stroke-width="1.5" cx="162.52626" cy="187.64214" id="svg_49" rx="22" ry="22"/>
+  <ellipse fill="#ff0000" stroke="#000" stroke-width="1.5" cx="222.52626" cy="187.64214" id="svg_50" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="147.52626" y="195.64214" id="svg_51" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25*</text>
+  <ellipse fill="#007fff" stroke="#000" stroke-width="1.5" cx="282.52626" cy="187.64214" id="svg_52" rx="22" ry="22"/>
+  <ellipse fill="#007fff" stroke="#000" stroke-width="1.5" cx="342.52626" cy="187.64214" id="svg_53" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="270.52626" y="195.64214" id="svg_54" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">08</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="209.52626" y="195.64214" id="svg_55" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">49</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="330.52626" y="195.64214" id="svg_56" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">16</text>
+  <ellipse fill="#ff0000" stroke="#000" stroke-width="1.5" cx="162.52626" cy="247.64214" id="svg_57" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="150.52626" y="255.64214" id="svg_58" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">21</text>
+  <ellipse fill="#ff0000" stroke="#000" stroke-width="1.5" cx="222.52626" cy="247.64214" id="svg_59" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="210.52626" y="255.64214" id="svg_60" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25</text>
+  <ellipse fill="#ff0000" stroke="#000" stroke-width="1.5" cx="282.52626" cy="247.64214" id="svg_61" rx="22" ry="22"/>
+  <ellipse fill="#ff0000" stroke="#000" stroke-width="1.5" cx="342.52626" cy="247.64214" id="svg_62" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="267.52626" y="255.64214" id="svg_63" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">25*</text>
+  <ellipse fill="#ff0000" stroke="#000" stroke-width="1.5" cx="42.52626" cy="247.64214" id="svg_65" rx="22" ry="22"/>
+  <ellipse fill="#ff0000" stroke="#000" stroke-width="1.5" cx="102.52626" cy="247.64214" id="svg_66" rx="22" ry="22"/>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="30.52626" y="255.64214" id="svg_67" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">08</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="329.52626" y="255.64214" id="svg_68" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">49</text>
+  <text fill="#000000" stroke="#000" stroke-width="0" x="90.52626" y="255.64214" id="svg_69" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve">16</text>
+</svg>
+
+*  性能分析
+	* 如果待排序的记录为n个，则需要做$$log_2n$$趟两路归并排序  
+	* 每趟两路归并排序的时间复杂度为O(n) 
+	* 因此2路——归并排序的时间复杂度为$$O(n\log_2n)$$
+	* 归并排序是一种稳定的排序方法
 
 ---
 
@@ -1460,7 +1553,83 @@ tags : [Data structure]
 
 ####  一、多关键字的排序   
 
+*  例:对52张扑克牌按以下次序排序：
+♣2<♣3<......<♣A<♢2<♢3<......<♢A<♥2<♥3<......<♥A<♤2<♤3<......<♤A
+* 两个关键字：
+	* 花色（♣<♢<♥<♤）
+	* 面值 （2<3<...<A）
+* 并且“花色”地位高于“面值”  
+*  最低位优先法LSD
+	* 从最低位关键字kd起进行排序，
+	* 然后再对高一位的关键字排序，......
+	* 依次重复，直至对最高位关键字k1排序后，便成为一个有序序列
+*  例子
+
+<svg width="450" height="225">
+  <ellipse ry="22" rx="22" id="svg_1" cy="67.64214" cx="42.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="75.64214" x="30.52626" stroke-width="0" stroke="#000" fill="#000000">21</text>
+  <ellipse ry="22" rx="22" id="svg_5" cy="67.64214" cx="102.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_6" y="75.64214" x="90.52626" stroke-width="0" stroke="#000" fill="#000000">25</text>
+  <ellipse ry="22" rx="22" id="svg_7" cy="67.64214" cx="162.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_8" y="75.64214" x="149.52626" stroke-width="0" stroke="#000" fill="#000000">49</text>
+  <ellipse ry="22" rx="22" id="svg_9" cy="67.64214" cx="222.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_10" y="75.64214" x="207.52626" stroke-width="0" stroke="#000" fill="#000000">25*</text>
+  <ellipse ry="22" rx="22" id="svg_11" cy="67.64214" cx="282.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_12" y="75.64214" x="270.52626" stroke-width="0" stroke="#000" fill="#000000">16</text>
+  <ellipse ry="22" rx="22" id="svg_13" cy="67.64214" cx="342.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_14" y="75.64214" x="330.52626" stroke-width="0" stroke="#000" fill="#000000">08</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_15" y="35.64214" x="30.52626" stroke-width="0" stroke="#000" fill="#000000">0</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_16" y="35.64214" x="90.52626" stroke-width="0" stroke="#000" fill="#000000">1</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_17" y="35.64214" x="150.52626" stroke-width="0" stroke="#000" fill="#000000">2</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_18" y="35.64214" x="210.52626" stroke-width="0" stroke="#000" fill="#000000">3</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_19" y="35.64214" x="270.52626" stroke-width="0" stroke="#000" fill="#000000">4</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_20" y="35.64214" x="330.52626" stroke-width="0" stroke="#000" fill="#000000">5</text>
+  <ellipse ry="22" rx="22" id="svg_32" cy="127.64214" cx="42.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_33" y="135.64214" x="30.52626" stroke-width="0" stroke="#000" fill="#000000">21</text>
+  <ellipse ry="22" rx="22" id="svg_34" cy="127.64214" cx="102.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_35" y="135.64214" x="90.52626" stroke-width="0" stroke="#000" fill="#000000">25</text>
+  <ellipse ry="22" rx="22" id="svg_36" cy="127.64214" cx="162.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <ellipse ry="22" rx="22" id="svg_38" cy="127.64214" cx="222.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_39" y="135.64214" x="147.52626" stroke-width="0" stroke="#000" fill="#000000">25*</text>
+  <ellipse ry="22" rx="22" id="svg_40" cy="127.64214" cx="282.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_41" y="135.64214" x="210.52626" stroke-width="0" stroke="#000" fill="#000000">16</text>
+  <ellipse ry="22" rx="22" id="svg_42" cy="127.64214" cx="342.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_43" y="135.64214" x="270.52626" stroke-width="0" stroke="#000" fill="#000000">08</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_37" y="135.64214" x="329.52626" stroke-width="0" stroke="#000" fill="#000000">49</text>
+  <ellipse ry="22" rx="22" id="svg_44" cy="187.64214" cx="42.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <ellipse ry="22" rx="22" id="svg_46" cy="187.64214" cx="102.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <ellipse ry="22" rx="22" id="svg_48" cy="187.64214" cx="162.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_45" y="194.53103" x="150.52626" stroke-width="0" stroke="#000" fill="#000000">21</text>
+  <ellipse ry="22" rx="22" id="svg_49" cy="187.64214" cx="222.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_47" y="195.08659" x="210.52626" stroke-width="0" stroke="#000" fill="#000000">25</text>
+  <ellipse ry="22" rx="22" id="svg_51" cy="187.64214" cx="282.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_50" y="195.64214" x="267.52626" stroke-width="0" stroke="#000" fill="#000000">25*</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_52" y="195.64214" x="90.52626" stroke-width="0" stroke="#000" fill="#000000">16</text>
+  <ellipse ry="22" rx="22" id="svg_53" cy="187.64214" cx="342.52626" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_54" y="195.64214" x="30.52626" stroke-width="0" stroke="#000" fill="#000000">08</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_55" y="195.64214" x="329.52626" stroke-width="0" stroke="#000" fill="#000000">49</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_56" y="136.83334" x="385.27666" stroke-width="0" stroke="#000" fill="#000000">个位</text>
+  <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_57" y="194.05547" x="381.94767" stroke-width="0" stroke="#000" fill="#000000">十位</text>
+</svg>
+
 ####  二、链式基数排序  
+
+* 1）定义
+	*  基数排序：借助“分配”和“收集”对单逻辑关键字进行排序的一种方法
+	*  链式技术排序方法：用链表做存储结构的基数排序
+	*  设置10个队列，f[i]和e[i]分别为第i个队列的头指针和尾指针
+	*  第i趟分配：根据第i位关键字的值，改变记录的指针，将链表中记录按次序分配至10个链表队列中（采用队尾插入法）；每个队列中记录关键字的第i位关键字相同
+	*  第i趟收集：改变所有非空队列的队尾记录的指针域，令其指向下一个非空队列的队头记录，重新将10个队列链成一个链表
+	*  从最低位至最高位，逐位执行上述两步操作，最后得到一个有序序列
+
+* 2) 性能分析
+	* 若每个关键字有d位，关键字的基数为radix
+	* 需要重复执行d趟“分配与“收集”
+	* 每趟对n个对象进行“分配”，对radix个队列进行“收集”
+	* 总时间复杂度为O(d(n+radix))
+	* 若基数radix相同，对于对象较多而关键字位数较少的情况，使用链式基数排序较好
+	* 基数排序需要增加n+2radix个附加链接指针
+	* 基数排序是稳定的排序方法 
 
 ---
 
