@@ -193,4 +193,34 @@ tags : [Nutrition]
 	* BMI = 体重（kg）/[身高（m）]^2
 * 成年人身体脂肪率 body fat ratio (fat%)
 	* 体成分测定仪器	 
+
+### 参考文献 reference
  
+网络链接
+
+        ①http://www.who.int/en/
+        ②http://www.fda.gov/
+        ③http://www.cnsoc.org/cn/ 
+        ④http://www.diabetes.org/         
+        ⑤http://v.youku.com/v_show/id_XNzU3NDU5OTA4.html 
+        ⑥http://v.youku.com/v_show/id_XMzYwMTUyOTIw.html
+
+参考文献
+
+[1]Nascimento,D.S.Z., et al..Effect of the "protein diet" and bone tissue.Nutr Hosp,2014.29(1):140-5.
+
+[2]Chen,W.and E.H.Kossoff.Long-Term Follow-Up of Children Treated With the Modified Atkins Diet.Journal of Child Neurology,2012.27(6):754-758.
+
+[3]Kossoff,E.,Ghee whiz.The growing evidence for the benefits of the modified atkins diet. Epilepsy Curr,2013.13(5):211-2.
+
+[4]Wu,H., et al..Association between dietary carbohydrate intake and dietary glycemic index and risk of age-related cataract: A meta-analysis.Invest Ophthalmol Vis Sci,2014:2.
+
+[5]McLellan, F..Obesity rising to alarming levels around the world.Lancet,2002.359(9315): 1412.
+
+[6]王竹,杨月欣,王国栋等.淀粉的消化特性与血糖生成指数[J].卫生研究,2003(06):622-624.
+
+[7]缪铭,张涛,秦啸天等.谷物淀粉的慢消化特性与餐后血糖应答[J].营养学报,2009(03):218-221.
+
+[8]刘兰,杨月欣.低碳水化合物膳食与肥胖[J].国外医学(卫生学分册),2006,33(06):358-362.
+
+[9]王伟.营养素平衡与能量平衡[J].中国中医药现代远程教育,2009(10):208-209.
