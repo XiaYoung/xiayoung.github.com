@@ -5,8 +5,6 @@ tags : [Nutrition]
 ---
 #身边的营养学  
 
-## 概论  
-
 ## 四、膳食纤维（Dietary Fiber）
 
 ### 课程概要 course summary  
