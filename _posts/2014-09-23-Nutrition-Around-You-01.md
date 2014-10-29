@@ -3,9 +3,8 @@ layout : post
 category : mooc
 tags : [Nutrition]
 ---
-#身边的营养学  
 
-## 概论  
+# 身边的营养学    
 
 ## 一、蛋白质（Protein）
 
@@ -284,14 +283,3 @@ tags : [Nutrition]
 
 [9]Korhonen H, Pihlanto A. Food-derived bioactive peptides opportunities for designing future foods[J].Current Pharmaceutical Design,2003, 9(16):1297-1308.
 
-## 脂类（Lipids）
-
-## 碳水化合物（Carbohydrate）
-
-## 膳食纤维（Dietary Fiber）
-
-## 维生素（Vitamins）
-
-## 矿物质（Minerals）
-
-## 水（Water）
