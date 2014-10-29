@@ -5,7 +5,7 @@ tags : [Nutrition]
 ---
 #身边的营养学  
 
-## 五、矿物质-概论 Mineral
+## 五、矿物质 Mineral
 
 ### 课程概要 course summary  
 
@@ -527,3 +527,55 @@ tags : [Nutrition]
 	* 海产品的碘含量大于陆地食物
 		* 海带、紫菜、发菜、淡菜、海参、干贝、海鱼、海虾、蚶等含碘丰富
 	* 动物性食物的碘含量大于植物性食物
+
+### 参考文献 Reference
+
+网址链接：
+
+①http://www.who.int/en/
+
+②http://www.fda.gov/
+
+③http://www.chinanutri.cn/
+
+④http://www.cnsoc.org/cn/
+
+ 
+
+参考文献：
+
+[1]Truswell, A.S., ABC of nutrition. 1999: BMJ Books. vii, 121.
+
+[2]Rayman, M.P., Dietary Selenium: Time to Act: Low Bioavailability in Britain and Europe Could Be Contributing to Cancers, Cardiovascular Disease, and Subfertility. BMJ: British Medical Journal, 1997. 314(7078): p. 387 - 388.
+
+[3]Pearce, E.N., Effects of iodine deficiency in pregnancy. Journal of Trace Elements in Medicine and Biology, 2012. 26(2-3): p. 131-133.
+
+[4]WHO. Guideline: Potassium intake for adults and children.Geneva, World Health Organization (WHO), 2012.
+
+[5]Hamza, R.T., D.H. Hewedi and M.T. Sallam, Iodine Deficiency in Egyptian Autistic Children and Their Mothers: Relation to Disease Severity. Archives of Medical Research, 2013. 44(7): p. 555-561.
+
+[6]WHO. Guideline: Sodium intake for adults and children.Geneva, World Health Organization (WHO), 2005.
+
+[7]Surico, G., et al., Parenteral iron supplementation for the treatment of iron deficiency anemia in children. Annals of Hematology, 2002. 81(3): p. 154-157.
+
+[8]Weaver, C.M., Potassium and Health. Advances in Nutrition: An International Review Journal, 2013. 4(3): p. 368S-377S.
+
+[9]Recker, R.R., Prevention of osteoporosis: calcium nutrition. Osteoporosis international : a journal established as result of cooperation between the European Foundation for Osteoporosis and the National Osteoporosis Foundation of the USA, 1993. 3 Suppl 1(S1): p. 163 - S165.
+
+[10]Comerford, K.B., Recent Developments in Multivitamin/Mineral Research. Advances in Nutrition: An International Review Journal, 2013. 4(6): p. 644-656.
+
+[11]Umeta, M., et al., Zinc supplementation and stunted infants in Ethiopia: a randomised controlled trial. Lancet, 2000. 355(9220): p. 2021-6.
+
+[12] WHO. Guideline: vitamin and mineral requirements in human nutrition.Geneva, World Health Organization (WHO), 2005.
+
+[13]夏敏.必需微量元素与人体健康[J].中国食物与营养, 2003(10):50-53.
+
+[14]孙永叶等.不同铁营养状况孕妇抗氧化能力及细胞功能的研究.中国营养学会第十次全国营养学术会议暨第七届会员代表大会2008,中国北京:5.
+
+[15]张岚,蔡美琴钙.微量元素与老年痴呆的预防及治疗[J].中国临床营养杂志, 2004(02):76-79.
+
+[16]王萍玉,张亨菊.骨质疏松症的膳食危险因素研究进展[J]. 卫生研究, 2003(01):81-83.
+
+[17]刘烈刚.锌-ZnT8基因多态性与2型糖尿病的关联性研究.营养与糖尿病并发症——达能营养中心第十六届学术会议2013,中国湖北武汉:6.
+
+[18]郝磊,王惠珊.缺铁性贫血的干预措施[J].中国优生与遗传杂志, 2006.14(10):3-5.
