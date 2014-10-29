@@ -122,3 +122,36 @@ tags : [Nutrition]
 *  over 60g/d
 	* Disturbing mineral absorption
 	* Abdominal distension
+
+### 参考文献 reference
+
+网址链接
+
+①中国营养学会网站 www.cnsoc.org
+
+②中国膳食纤维网 www.ssxww.com
+
+③美国FDA网站www.fda.gov
+
+
+参考文献
+
+[1]王彦玲, 刘冬, 付全意, 李坚斌, 邓立高. 膳食纤维的国内外研究进展[J]. 中国酿造, 2008, 5:1-3.
+
+[2]王岸娜, 朱海兰, 吴立根, 王安建, 魏书信. 膳食纤维的功能、改性及应用[J]. 河南工业大学学报(自然科学版), 2009, 30(2): 89-93.
+
+[3]扈晓杰, 韩冬, 李铎. 膳食纤维的定义、分析方法和摄入现状[J]. 中国食品学报, 2011,11(3): 133-136.
+
+[4]张绪霞, 陈卫梅, 董海洲, 许丽娜, 侯汉学. 大豆膳食纤维的营养功能特性及开发前景[J]. 中国食物与营养, 2007,2: 49-51.
+
+[5]李焕霞, 任志, 王华, 杨坚. 我国膳食纤维研究现状分析[J]. 中国食品添加剂, 2007,2: 161-164
+
+ [6]Glyn O. Phillips. Dietary fibre: A chemical category or a health ingredient?. Bioactive Carbohydrates and Dietary Fibre, 2013,1(1):3-9.
+
+ [7]Joanne L. Slavin. Dietary fiber and body weight. Nutrition, 2005, 21(3): 411-418.
+
+ [8]Christine L. Willliams. Dietary fiber in childhood. The journal of pediatrics, 2006, 149(5): S121-S130.
+
+ [9]Cyril WC Kendall, Amin Esfahani, David JAJ. The link between dietary fiber and human health. Food Hydrocolloids, 2010, 24(1): 42-48.
+
+ [10]Mann JI, Cummings JH. Possible implications for health of the different definitions of dietary fibre. Nutrition, Metabolism and Cardiovascular Diseases, 2009, 19(3):226-229.
