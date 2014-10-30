@@ -1,6 +1,6 @@
 ---
 layout: post
-category : reading note
+category : C Business Tools
 tags : [business model]
 ---
 ##Canvas
