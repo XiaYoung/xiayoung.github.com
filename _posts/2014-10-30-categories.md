@@ -1,9 +1,10 @@
 ---
 layout : post
-categories : [01 Fundamentalsof Programming, 01 Linear Algebra, 01 An Introduction to Computers, 01 Calculus, 02 Discrete Mathematics, 02 Object-Oriented Programming, 03 Data Structures, 03 Probability and Statistics, 04 Digital Image Processing, 04 Database Systems, 04 Design and Analysis of Algorithms, 04 Principles of Computer Organization, 05 Operating Systems, 05 Compiling Techniques, 05 Computing Methods, 05 Computer Graphics, 05 Software Engineering]
+categories : [01 Fundamentalsof Programming, 01 Linear Algebra, 01 An Introduction to Computers, 01 Calculus, 02 Discrete Mathematics, 02 Object-Oriented Programming, 03 Data Structures, 03 Probability and Statistics, 04 Digital Image Processing, 04 Database Systems, 04 Design and Analysis of Algorithms, 04 Principles of Computer Organization, 05 Operating Systems, 05 Compiling Techniques, 05 Computing Methods, 05 Computer Graphics, 05 Software Engineering, 06 Cloud Computing, A programming languages]
 ---
 目录
 
+知识
 01 Fundamentalsof Programming 程序设计基础  
 01 Linear Algebra 线性代数   
 01 An Introduction to Computers 计算机导论 
@@ -26,3 +27,7 @@ categories : [01 Fundamentalsof Programming, 01 Linear Algebra, 01 An Introducti
 05 Computer Graphics 计算机图形学"
 05 Software Engineering软件工程"
 -05面向对象软件系统建模技术"
+06 Cloud Computing
+
+技能
+A programming languages 
