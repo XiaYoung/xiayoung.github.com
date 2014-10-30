@@ -1,6 +1,6 @@
 ---
 layout : post
-category : reading note
+category : D Developing Tools
 tags : [Git]
 ---
 
