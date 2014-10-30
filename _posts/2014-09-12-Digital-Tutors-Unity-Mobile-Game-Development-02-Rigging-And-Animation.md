@@ -1,6 +1,6 @@
 ---
 layout : post
-category : learning note
+category : Developing Tools
 tags : [Unity, Maya, Rigging, Animation]
 ---
 ### Rigging Notes 
