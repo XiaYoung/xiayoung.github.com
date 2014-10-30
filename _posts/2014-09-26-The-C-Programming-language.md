@@ -1,7 +1,7 @@
 ---
 layout : post
-category : Programming language
-tags : [C , programming language]
+category : A Programming languages
+tags : [C ]
 ---
 # C语言  
 
