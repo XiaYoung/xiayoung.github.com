@@ -1,9 +1,10 @@
 ---
 layout : post
-category : mse
-tags : [Data structure]
---- 
-##第四章 串 
+category : 03 data structures
+tags : [data structures] 
+---
+
+## 第四章 串 
 
 ### **第一节 字符串**  
 
