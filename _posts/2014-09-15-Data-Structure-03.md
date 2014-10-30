@@ -1,9 +1,10 @@
 ---
 layout : post
-category : MSE
-tags : [Data structure, progaming basic] 
+category : 03 data structures
+tags : [data structures] 
 ---
-##第三章 栈和队列 
+
+## 第三章 栈和队列 
 
 ### **第一节 栈**  
 
