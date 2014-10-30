@@ -1,7 +1,7 @@
 ---
 layout : post
-category : MSE
-tags : [Data structure, progaming basic] 
+category : 03 data structures
+tags : [data structures] 
 ---
 ##第二章 线性表 
 
