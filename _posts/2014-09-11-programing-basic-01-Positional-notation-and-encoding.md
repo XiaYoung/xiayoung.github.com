@@ -1,6 +1,6 @@
 ---
 layout: post
-category : learning note
+category : 01 fundamentals of programming
 tags : [programing basic]
 ---
 
