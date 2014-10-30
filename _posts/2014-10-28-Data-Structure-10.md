@@ -1,9 +1,10 @@
 ---
 layout : post
-category : mse
-tags : [Data structure]
---- 
-##第十章 内部排序 
+category : 03 data structures
+tags : [data structures] 
+---
+
+## 第十章 内部排序 
 
 ### **第一节 排序**  
 
