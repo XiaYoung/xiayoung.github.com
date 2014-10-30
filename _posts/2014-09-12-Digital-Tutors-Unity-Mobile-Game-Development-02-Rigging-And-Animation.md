@@ -1,6 +1,6 @@
 ---
 layout : post
-category : Developing Tools
+category : D Developing Tools
 tags : [Unity, Maya, Rigging, Animation]
 ---
 ### Rigging Notes 
