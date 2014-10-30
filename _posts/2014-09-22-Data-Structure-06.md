@@ -1,9 +1,10 @@
 ---
 layout : post
-category : mse
-tags : [Data structure]
---- 
-##第六章 树与二叉树 
+category : 03 data structures
+tags : [data structures] 
+---
+
+## 第六章 树与二叉树 
 
 ### **第一节 树的概念与基本术语**  
 
