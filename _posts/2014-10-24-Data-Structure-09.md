@@ -1,9 +1,10 @@
 ---
 layout : post
-category : mse
-tags : [Data structure]
---- 
-##第九章 查找 
+category : 03 data structures
+tags : [data structures] 
+---
+
+## 第九章 查找 
 
 ### **第一节 查找的概念**  
 
