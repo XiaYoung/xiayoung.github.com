@@ -1,7 +1,7 @@
 ---
 layout : post
-category : MOOC
-tags: [ Advanced Mathematics]
+category : 01 calculus
+tags: [ calculus]
 ---
 
 ## 第三讲 集合与映射  
