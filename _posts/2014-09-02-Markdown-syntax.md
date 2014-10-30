@@ -1,7 +1,7 @@
 ---
 layout: post
-category : reference
-tags : [language, syntax, Markdown]
+category : B Writing Tools
+tags : [Markdown]
 ---
 ## Phrase Emphasis ##
 
