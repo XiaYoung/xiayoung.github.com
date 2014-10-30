@@ -1,7 +1,7 @@
 ---
 layout : post
-category : MSE
-tags : [cloud computing, progaming basic] 
+category : 06 Cloud Computing
+tags : [cloud computing] 
 ---
 ## 云计算技术及应用  
 
