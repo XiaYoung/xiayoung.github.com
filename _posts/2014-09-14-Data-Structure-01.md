@@ -1,7 +1,7 @@
 ---
 layout : post
-category : MSE
-tags : [Data structure, progaming basic] 
+category : 03 data structures
+tags : [data structures] 
 ---
 
 * This line is a placeholder to generate the table of contents
