@@ -1,9 +1,10 @@
 ---
 layout : post
-category : mse
-tags : [Data structure]
---- 
-##第七章 图 
+category : 03 data structures
+tags : [data structures] 
+---
+
+## 第七章 图 
 
 ### **第一节 图的定义与术语**  
 
