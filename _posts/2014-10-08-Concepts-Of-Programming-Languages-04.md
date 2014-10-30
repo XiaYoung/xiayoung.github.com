@@ -1,6 +1,6 @@
 ---
 layout : post
-category : programming language
+category : A Programming languages
 tags : [Programming language]
 ---
 
